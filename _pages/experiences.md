@@ -9,14 +9,18 @@ redirect_from:
   - /experience.html
   - /corporateExperience.html
   - /corporate
-  - /experiences/
+  - /corporate.html
   - /experience/
   - /work/
   - /corporate/
 ---
 
+
 {% include base_path %}
 
+<ul>
 {% for post in site.experiences reversed %}
-  {% include archive-single.html %}
+  <li> {% include archive-single-cv.html %} </li>
 {% endfor %}
+<!--   {% include archive-single.html %} -->
+</ul>

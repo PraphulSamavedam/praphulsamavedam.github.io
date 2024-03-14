@@ -4,10 +4,10 @@ main:
   - title: "Work Xp"
     url: /experiences/
 
-  - title: "Projects"
+  - title: "Portfolio"
     url: /portfolio/
 
-  - title: "Leadership xp"
+  - title: "Lead xp"
     url: "/leadership/"
 
   - title: "Resume"
@@ -19,8 +19,14 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Teaching xp"
+  - title: "Tutor xp"
     url: /teaching/
+
+  - title: "Volunteering xp"
+    url: /volunteering/
+
+  - title: "Fun"
+    url: /fun/
 
   #  - title: "Talks"
   #    url: /talks/
