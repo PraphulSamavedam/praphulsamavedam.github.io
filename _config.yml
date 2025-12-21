@@ -91,11 +91,11 @@ analytics:
 author:
   name: "Samavedam Manikhanta Praphul"
   avatar: "profile.png"
-  bio: "Exploring the artificial intelligence domain."
+  bio: "Software Development Engineer @ Amazon AGI | Building distributed AI systems at scale | MS AI @ Northeastern (4.0 GPA)"
   location: "United States"
-  employer: 
+  employer: "Amazon AGI"
   pubmed: # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar: "https://scholar.google.com/citations?user=ZkWDQOcAAAAJ&hl=en"
+  googlescholar: # "https://scholar.google.com/citations?user=ZkWDQOcAAAAJ&hl=en" # Hidden for professional portfolio
   email: praphulsamavedam@gmail.com; samavedam.m@northeastern.edu
   researchgate:  # example: "https://www.researchgate.net/profile/yourprofile"
   uri:
@@ -103,7 +103,7 @@ author:
   codepen:
   dribbble:
   flickr:
-  facebook: 
+  facebook:
   foursquare:
   github: "praphulsamavedam"
   google_plus:
@@ -186,12 +186,7 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
+  # PROFESSIONAL PORTFOLIO COLLECTIONS - Active
   leadership:
     output: true
     permalink: /:collection/:path/
@@ -201,9 +196,18 @@ collections:
   experiences:
     output: true
     permalink: /:collection/:path/
-  talks:
-    output: false
-    permalink: /:collection/:path/
+
+  # ACADEMIC COLLECTIONS - Hidden for professional portfolio (kept for easy restoration)
+  # Uncomment these sections to restore academic content
+  # teaching:
+  #   output: true
+  #   permalink: /:collection/:path/
+  # publications:
+  #   output: true
+  #   permalink: /:collection/:path/
+  # talks:
+  #   output: false
+  #   permalink: /:collection/:path/
 
 
 # Defaults
@@ -226,24 +230,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+
+  # PROFESSIONAL PORTFOLIO COLLECTION DEFAULTS - Active
   # _portfolio
   - scope:
       path: ""
@@ -271,14 +259,35 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+
+  # ACADEMIC COLLECTION DEFAULTS - Hidden for professional portfolio (kept for easy restoration)
+  # Uncomment these sections to restore academic content
+  # # _teaching
+  # - scope:
+  #     path: ""
+  #     type: teaching
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comments: true
+  # # _publications
+  # - scope:
+  #     path: ""
+  #     type: publications
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comments: true
+  # # _talks
+  # - scope:
+  #     path: ""
+  #     type: talks
+  #   values:
+  #     layout: talk
+  #     author_profile: true
+  #     share: true
 
 # Sass/SCSS
 sass:

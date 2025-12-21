@@ -1,38 +1,46 @@
-# main links links
+# main links
 main:
 
-  - title: "Work Xp"
-    url: /experiences/
+  - title: "About"
+    url: /
 
-  - title: "Portfolio"
+  - title: "Projects"
     url: /portfolio/
 
-  - title: "Lead xp"
-    url: "/leadership/"
+  - title: "Experience"
+    url: /experiences/
+
+  - title: "Skills"
+    url: /skills/
+
+  - title: "Leadership"
+    url: /leadership/
 
   - title: "Resume"
     url: /resume/
 
-  - title: "CV"
-    url: /cv/
+  # Academic sections (commented out for professional portfolio)
+  #  - title: "CV"
+  #    url: /cv/
 
-  - title: "Publications"
-    url: /publications/
+  #  - title: "Publications"
+  #    url: /publications/
 
-  - title: "Tutor xp"
-    url: /teaching/
-
-  - title: "Volunteering xp"
-    url: /volunteering/
-
-  - title: "Fun"
-    url: /fun/
+  #  - title: "Teaching"
+  #    url: /teaching/
 
   #  - title: "Talks"
   #    url: /talks/
 
-#  - title: "Blog Posts"
-#    url: /year-archive/
+  # Other sections
+  #  - title: "Volunteering xp"
+  #    url: /volunteering/
 
-#  - title: "Guide"
-#    url: /markdown/
+  #  - title: "Fun"
+  #    url: /fun/
+
+  #  - title: "Blog Posts"
+  #    url: /year-archive/
+
+  #  - title: "Guide"
+  #    url: /markdown/
