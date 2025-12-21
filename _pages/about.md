@@ -3,7 +3,7 @@ permalink: /
 title: "About"
 excerpt: "About me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
   - /about-me.html
@@ -11,93 +11,120 @@ redirect_from:
   - /aboutme/
 ---
 
-Welcome to my personal website! Here, you’ll find a collection of my portfolio, work experiences, leadership experiences
-, volunteering experiences, teaching experiences, fun photos, research publications, and more. I’ve had the privilege of
-working with some amazing organizations and individuals throughout my career, and I’m excited to share my journey with 
-you. Take a look around through menu options and feel free to reach out if you have any questions or would like to 
-connect. Thank you for your time to visiting my site and getting to know about me !
+## Software Development Engineer | Amazon AGI Team
 
-## Summary
+Building the future of Artificial General Intelligence at **Amazon AGI**, where I architect and scale core AI infrastructure powering next-generation AI systems that process and learn at unprecedented Amazon scale.
 
-I am currently pursuing my masters in Artificial Intelligence (AI) at 
-Khoury College of Computer Sciences, Northeastern University.
-Actively looking opportunities starting from **_January 2025_**. Currently, 
-carrying out **research** on Visual LLM (Multi-modal LLM), AI Ethics framework extension.
+With over **5+ years** of specialized experience in AI/ML engineering across leading tech companies and innovative startups, I combine deep technical expertise in distributed AI systems, LLM infrastructure, multi-agent systems, and production ML systems with a track record of delivering high-impact solutions at scale.
 
-I have concluded my Machine Learning Engineer Intern Co-op at an innovative 
-no code AI startup 'Sway AI' (Cloud based ML Platform development), Boston in 
-Jan 2024. Additionally, I possess 4 years of experience working as Machine Learning Engineer at Nvidia, UBS, BNY Mellon, and PensioTech with senior management members of cross-functional teams, utilizing Agile methodologies.
+### What I'm Building Now
 
-Achievements:
-- **1<i><sup>st</sup></i>** position in UBS's Superstars (AI category).
-- **<b>5<i><sup>th</sup></i></b>** position at Kaggle's image download 
-  prediction.
-- **14<i><sup>th</sup></i>** (Top - 0.2%) at Sales forecasting hackathon. 
+At Amazon's AGI division, I engineer **core infrastructure** that powers next-generation AI systems at scale. My work focuses on building distributed systems that enable AI to learn, reason, and operate across diverse domains—pushing the boundaries of what's possible in artificial intelligence.
 
-<!-- In predictive modelling hackathons, I have won 
-**1<i><sup>st</sup></i>** position in UBS's Superstars. Also, I have secured  and <b>14<sup><i>th</i></sup></b> positions at competitive hackathons for predicting image downloads and forecasting sales hosted on Kaggle and Analytics Vidya respectively.
+**Interested in AGI, distributed AI systems, or building ML at scale?** Let's connect.
+
+### Background & Expertise
+
+**Education**
+- **MS in Artificial Intelligence** | Khoury College of Computer Sciences, Northeastern University | **GPA: 4.0/4.0**
+- **B.E. (Hons) in Electrical & Electronics Engineering** | BITS-Pilani | India's #1 Private University
+
+My interdisciplinary background—from hardware architecture and electrical engineering to advanced AI—enables me to design optimized ML infrastructure and multi-agent systems that consider the full stack, from distributed system design and algorithm optimization to hardware acceleration on GPUs, TPUs, and custom AI accelerators.
+
+### Professional Experience
+
+**5+ years** of specialized experience across **Amazon, Nvidia, UBS, BNY Mellon, and innovative AI startups**. Expertise spans distributed AI systems, GPU-accelerated computing, enterprise-scale ML platforms, and production deployment of ML systems processing data at scale.
+
+### Competition Wins & Recognition
+- 🥇 **1st Place** - UBS Superstars Hackathon | Real-time Sign Language Translation
+- 🏆 **Top 5** - Kaggle Image Popularity Challenge
+- 🏆 **Top 14/6,828** - Sales Forecasting Challenge (Top 0.2% globally) 
+
+### Featured Projects
+
+Explore my [complete portfolio](https://praphulsamavedam.github.io/portfolio/) for detailed project breakdowns, technical implementations, and results.
+
+**Multi-Modal AI & Large Language Models**
+- Visual Question Answering (VQA) - Multi-modal LLMs for reasoning over visual and textual information
+- LLM-Based Text Summarization & Translation - Built BART models and Transformers from scratch
+- Natural Language Inference (NLI) - Multi-domain models for textual entailment
+
+**Robotics & Computer Vision**
+- Instruction-Following Robot - Programmed Locobot WX250 for natural language command execution
+- Real-Time Interview Emotion Detection - Live emotion recognition system for interview analytics
+- [Classical Computer Vision Projects](https://github.com/PraphulSamavedam/CS-5330-Pattern-Recognition-and-Computer-Vision) - AR Furniture placement, live cartoon filters
+
+**Applied ML & Data Science**
+- [Medical MNIST Classification](https://github.com/PraphulSamavedam/nn-bio-tech/blob/main/medical_mnist_pytorch.ipynb) - Healthcare AI for medical imaging
+- Open Document Sensitivity Classifier - Enterprise security ML system
+- Microbe Analytics Data Engineering - Research-grade data pipelines for computational biology
+
+### Leadership & Community
+
+**Former President** | Google Developer Student Club (GDSC), Northeastern University
+Led technical workshops, hackathons, and community building initiatives connecting 500+ students with cutting-edge technologies and industry best practices.
+
+**Graduate Teaching Assistant** | Machine Learning & Data Mining (DS 4420)
+Mentored graduate students in advanced ML concepts, reinforcing best practices in model development, evaluation, and deployment.
+
+<!-- ACADEMIC CONTENT - Hidden for professional portfolio -->
+<!--
+## Research Experience
+- Published IEEE research paper in communications engineering
+- Ongoing research on mitigating bias in models
+- Ongoing research on Multi-modal LLM - Visual Large Language Models (VLLM)
 -->
-
-<!-- Coming to my journey, I have did my undergraduate studies in Electrical and Electronics Engineering at BITS-Pilani (No 1. Private Engineering College) with my Co-ops, internships at Nvidia, PensioTech. Post undergraduate studies, I have worked for 4 years at UBS, BNY Mellon where I was promoted and recognized with several awards. Currently on set to do my master's degree in Artificial Intelligence (AI). Throughout journey
-
-By leveraging my technical skills and knowledge of artificial intelligence, I was able to develop solutions that streamlined processes and increased efficiency. -->
-
-<!-- Overall, I am a highly motivated, daring individual with a passion for 
-artificial intelligence and a strong desire to have a challenging career with positive impact in the field. My diverse skill set and experiences make me an ideal candidate for any organization looking to innovate and grow.
--->
-<!-- My undergraduate studies in Electrical and Electronics Engineering at India's top private university 
-BITS-Pilani, Pilani campus have given me a strong foundation in hardware, which I believe will be beneficial in 
-developing the best products that have software perfectly optimized with underlying hardware. So I strongly believe that 
-we have a strong background in both software and hardware through my educational and professional journey. -->
-
-
-<!-- ## Technical Skills
-- Languages: **Python, SQL,** Java, C++, MATLAB, Apache Spark       
-- **Databases:** Oracle (11g, 12c), MySQL     
-- **AI Skills:** Deep Learning (DL), Machine Learning (ML), Computer Vision (CV), Natural Language Processing (NLP)     
-- **Python Libraries:**	PyTorch, Scikit-learn, TensorFlow, Torch vision, Hugging Face, OpenCV, Pandas, Keras, Seaborn, Matplotlib, Plotly, H2O, NumPy, Media Pipe, Pillow, Imutils, Albumentations, PyTesseract, Scikit-Image, NLTK, Spacy, TextBlob      
-- **Certifications:** Azure AI & Data Fundamentals, Advanced Alteryx, Deep Learning Specialization (Coursera)     
-- **ML Models/Architectures:** Decision Tree, Alex Net, BERT, Pose Net, Bi-LSTM, SVMs, Gradient Boost, VGG-16, ResNet-50, Faster R-CNN, XG Boost, AdaBoost, Efficient Net, RNN, U-Net, Alex Net, Efficient Net, R-CNN family, Random Forest, Table Net, XG Boost, Fast R-CNN, LeNet-5, LSTM, Inception Net, Roberta, Mask R-CNN, Yolo     
-- **Others:** Git, PyCharm, Intellij,  Shell scripting, VS Code, SVN, Gitlab, Perforce , Apache Airflow, Qlikview, Power BI, DevOps     
-- **OS:**  Windows, Unix, Linux (Ubuntu, Fedora, RHEL 5.9, RHEL 6.10 distros)      -->
 
 ## LinkedIn profile badge
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="smpraphul" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/smpraphul?trk=profile-badge">Samavedam Manikhanta Praphul</a></div>
 
 
-## [Work experiences](https://praphulsamavedam.github.io/experiences/):
-- Machine Learning Engineer Intern at Sway AI ~ 6 months <img src='/images/workExp/sway-ai-logo.png' alt='Sway AI logo' height='100'>
-- Machine Learning Engineer at BNY Mellon ~ 4 months <img src='/images/workExp/bny-mellon-logo.png' alt='BNY Mellon logo' height='100'>
-- Machine Learning Engineer at UBS ~ 3.5 years (44 months) <img src='/images/workExp/ubs-logo.png' alt='UBS logo' height='100'>
-- Fall Co-op at Nvidia ~ 6 months <img src='/images/workExp/nvidia-logo.png' alt='Nvidia logo' height='100'>
-- Summer Intern at PensioTech ~ 2 months <img src='/images/workExp/pensio-tech-logo.png' alt='Pensio Tech logo' height='100'>
+### Professional Certifications
 
+- [Deep Learning Specialization](https://www.coursera.org/account/accomplishments/certificate/EX2VDP2VRP7E) (Coursera)
+- [Azure AI Fundamentals](https://www.credly.com/badges/2a155e93-1693-4749-9ea8-235c8821d717/public_url)
+- [Azure Data Fundamentals](https://www.credly.com/badges/543f1649-2a91-4ee3-922a-543de5557d1e/public_url)
+- [Google Cloud AI/ML](https://www.cloudskillsboost.google/public_profiles/8c553b62-312c-4380-ae1d-b241566f698a)
+
+---
+
+## [View Detailed Work Experience →](https://praphulsamavedam.github.io/experiences/)
+
+<!-- DETAILED WORK EXPERIENCE WITH LOGOS - Available on dedicated page
+- Software Development Engineer at Amazon AGI
+- Machine Learning Engineer Intern at Sway AI ~ 6 months
+- Machine Learning Engineer at BNY Mellon ~ 4 months
+- Machine Learning Engineer at UBS ~ 3.5 years (44 months)
+- Fall Co-op at Nvidia ~ 6 months
+- Summer Intern at PensioTech ~ 2 months
+-->
+
+<!-- ACADEMIC RESEARCH SECTION - Hidden for professional portfolio
 ## Research experience
-- Ongoing research on mitigating bias in models.
+- Published IEEE research paper in communications engineering
+- Ongoing research on mitigating bias in models
 - Ongoing research on Multi-modal LLM - Visual Large Language Models (VLLM)
 - [Publications](https://praphulsamavedam.github.io/publications/)
   - [IEEE Paper titled "Energy Harvesting, Hybrid, Cooperative Wireless System Modeling and Outage Performance Analysis"](https://praphulsamavedam.github.io/publication/paper-1)
+-->
 
-## Resume
-My resume is tailored for the opportunity so contact me via 
-[Email](mailto:samavedam.m@northeastern.edu;praphulsamavedam@gmail.com)
-[LinkedIn](https://www.linkedin.com/in/smpraphul)
+---
 
-<!-- [Sample resumes](https://praphulsamavedam.github.io/resume/) -->
+## Connect With Me
 
-## [Curriculum Vitae](https://praphulsamavedam.github.io/cv/)
+**Open to collaborations on challenging problems in AGI, multi-modal learning, and production ML systems.**
 
-## Contact me
-[email](mailto:samavedam.m@northeastern.edu;praphulsamavedam@gmail.com)
-[LinkedIn](https://www.linkedin.com/in/smpraphul)
+📧 [praphulsamavedam@gmail.com](mailto:praphulsamavedam@gmail.com) | [samavedam.m@northeastern.edu](mailto:samavedam.m@northeastern.edu)
 
+💼 [LinkedIn](https://www.linkedin.com/in/smpraphul)
 
-
-
-
-
-
+<!-- ACADEMIC SECTIONS - Hidden for professional portfolio
+## Resume & CV
+My resume is tailored for each opportunity. Contact me via email or LinkedIn.
+- [Sample resumes](https://praphulsamavedam.github.io/resume/)
+- [Curriculum Vitae](https://praphulsamavedam.github.io/cv/)
+-->
 
 
 
@@ -110,12 +137,14 @@ My resume is tailored for the opportunity so contact me via
 
 
 
-## Updates:
-<img src="images/under_development.png" width=720 alt="Site Under development"><br>
-This website is under development so some links might have placeholders, so kindly bare with me, else please
-[email](mailto:samavedam.m@northeastern.edu;praphulsamavedam@gmail.com)
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-###### Note
-This github page is based on the [template](https://academicpages.github.io/) developed by [Stuart Geiger
-](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+
+
+
+
+
+
+
+---
+
+_Building AI systems that matter. Pushing the boundaries of what's possible in artificial intelligence._
  
