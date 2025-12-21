@@ -17,23 +17,45 @@ Building the future of Artificial General Intelligence at **Amazon AGI**, where 
 
 With **5+ years** engineering highly-scaled production ML systems across **Amazon, Nvidia, UBS, BNY Mellon, and innovative AI startups**, I specialize in the full ML lifecycle—from **pre-training and post-training (SFT, RLHF)** of large language models to **deploying multi-agent agentic systems** on distributed Kubernetes clusters processing petabyte-scale data.
 
-### What I Build
+---
 
-At Amazon's AGI division, I architect **production ML infrastructure** that powers AI systems spanning over the LLM pre-training and post-training at scale.
+## What I Build
 
-**Interested in building the next generation of AI systems? Working on LLM training, agentic AI, or production ML at scale? Let's collaborate.**
+At Amazon's AGI division, I architect **production ML infrastructure** that powers AI systems at scale:
 
-### Background & Expertise
+**LLM Training & Fine-tuning Pipelines**
+- Pre-training infrastructure for foundation models processing massive datasets
+- Post-training systems: Supervised Fine-Tuning (SFT), Reinforcement Learning from Human Feedback (RLHF)
+- Distributed training orchestration across multi-GPU/TPU clusters
+
+**Agentic AI Systems**
+- Multi-agent architectures with reasoning, planning, and tool-use capabilities
+- Production deployment of autonomous agents processing real-world workloads
+- Agent orchestration and coordination at scale
+
+**Kubernetes-Native ML Infrastructure**
+- Deep expertise: custom operators, GPU scheduling, multi-tenant clusters
+- Service mesh integration, autoscaling, observability at scale
+- Production-grade ML platforms handling thousands of compute nodes
+
+**Production ML Systems**
+- Serving billion-parameter models with low-latency inference
+- Real-time prediction pipelines, distributed systems design
+- GPU-accelerated computing: CUDA optimization, mixed-precision training
+
+---
+
+## Background & Expertise
 
 **Education**
-- **MS in Artificial Intelligence** | Khoury College of Computer Sciences, Northeastern University
-- **B.E. (Hons) in Electrical & Electronics Engineering** | BITS-Pilani
+- **MS in Artificial Intelligence** | Khoury College of Computer Sciences, Northeastern University | **GPA: 4.0/4.0**
+- **B.E. (Hons) in Electrical & Electronics Engineering** | BITS-Pilani | India's #1 Private University
 
 My interdisciplinary background—from hardware architecture and electrical engineering to advanced AI—enables me to design optimized ML infrastructure and multi-agent systems that consider the full stack, from distributed system design and algorithm optimization to hardware acceleration on GPUs, TPUs, and custom AI accelerators.
 
 ### Professional Experience
 
-**5+ years** engineering production ML systems at scale across **Amazon, Nvidia, UBS, BNY Mellon, and innovative AI startups Sway AI(no code ML platform):
+**5+ years** engineering production ML systems at scale across **Amazon, Nvidia, UBS, BNY Mellon, and innovative AI startups**:
 
 **Technical Depth:**
 - **LLM Infrastructure**: Pre-training data pipelines, post-training systems (SFT, RLHF), distributed training optimization
@@ -48,6 +70,7 @@ My interdisciplinary background—from hardware architecture and electrical engi
 - 🏆 **Top 5** - Kaggle Image Popularity Challenge
 - 🏆 **Top 14/6,828** - Sales Forecasting Challenge (Top 0.2% globally) 
 
+<!-- TECHNICAL PROJECTS - Commented out to reduce repetition, full details available on Portfolio page
 ### Technical Projects
 
 Explore my [complete portfolio](https://praphulsamavedam.github.io/portfolio/) for detailed implementations, architectures, and results.
@@ -66,6 +89,7 @@ Explore my [complete portfolio](https://praphulsamavedam.github.io/portfolio/) f
 - **[Medical MNIST Classification](https://github.com/PraphulSamavedam/nn-bio-tech/blob/main/medical_mnist_pytorch.ipynb)** - Healthcare AI with PyTorch for medical imaging diagnostics
 - **Enterprise Security ML System** - Document sensitivity classifier for large-scale enterprise deployment
 - **Computational Biology Data Pipelines** - Research-grade ETL systems for microbe analytics at scale
+-->
 
 ### Leadership & Community
 
@@ -120,28 +144,11 @@ Mentored graduate students in advanced ML concepts, reinforcing best practices i
   - [IEEE Paper titled "Energy Harvesting, Hybrid, Cooperative Wireless System Modeling and Outage Performance Analysis"](https://praphulsamavedam.github.io/publication/paper-1)
 -->
 
-## Resume
+## Let's Connect
 
-**I provide tailored resumes that align with specific opportunities.** To ensure the best fit, please share the role details and job description when reaching out—I'll prepare a version that highlights the most relevant experience and technical expertise for your consideration.
+**Interested in collaborating on LLM infrastructure, agentic AI systems, or production ML at scale?** I'm eager to work on ambitious problems that push boundaries.
 
-📧 [praphulsamavedam@gmail.com](mailto:praphulsamavedam@gmail.com)     
-💼 [LinkedIn](https://www.linkedin.com/in/smpraphul)
-
----
-
-## Let's Build Together
-
-I'm passionate about collaborating on ambitious AI/ML challenges. Whether you're:
-
-- 🚀 **Building LLM infrastructure** - Pre-training, fine-tuning (SFT, RLHF), or optimizing inference at scale
-- 🤖 **Developing agentic systems** - Multi-agent architectures, tool-use, reasoning, autonomous decision-making
-- ☸️ **Scaling ML on Kubernetes** - Custom operators, GPU scheduling, distributed training, or platform engineering
-- 🌐 **Architecting distributed AI systems** - Fault-tolerant ML pipelines, real-time inference, or petabyte-scale data processing
-- 💡 **Exploring novel AI applications** - Multi-modal learning, computer vision, NLP, or production ML systems
-
-**I'm eager to contribute, learn, and push boundaries together.**
-
-Whether you're tackling research problems, building production systems, or exploring new frontiers in AI—I'd love to hear from you.
+**Need a tailored resume?** Share the role details and job description—I'll prepare a version highlighting the most relevant experience for your consideration.
 
 📧 [praphulsamavedam@gmail.com](mailto:praphulsamavedam@gmail.com) | [samavedam.m@northeastern.edu](mailto:samavedam.m@northeastern.edu)
 
@@ -153,20 +160,6 @@ My resume is tailored for each opportunity. Contact me via email or LinkedIn.
 - [Sample resumes](https://praphulsamavedam.github.io/resume/)
 - [Curriculum Vitae](https://praphulsamavedam.github.io/cv/)
 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 _Engineering AI systems at scale. Advancing AGI research. Open to collaboration on ambitious problems that push the boundaries of what's possible._
