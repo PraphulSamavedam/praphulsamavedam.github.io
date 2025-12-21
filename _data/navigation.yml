@@ -16,8 +16,9 @@ main:
   - title: "Leadership"
     url: /leadership/
 
-  - title: "Resume"
-    url: /resume/
+  # Resume section moved to About page
+  #  - title: "Resume"
+  #    url: /resume/
 
   # Academic sections (commented out for professional portfolio)
   #  - title: "CV"

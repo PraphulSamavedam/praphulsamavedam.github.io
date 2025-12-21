@@ -111,6 +111,14 @@ Mentored graduate students in advanced ML concepts, reinforcing best practices i
 
 ---
 
+## Resume
+
+**I provide tailored resumes that align with specific opportunities.** To ensure the best fit, please share the role details and job description when reaching out—I'll prepare a version that highlights the most relevant experience and technical expertise for your consideration.
+
+📧 [praphulsamavedam@gmail.com](mailto:praphulsamavedam@gmail.com) | 💼 [LinkedIn](https://www.linkedin.com/in/smpraphul)
+
+---
+
 ## Connect With Me
 
 **Open to collaborations on challenging problems in AGI, multi-modal learning, and production ML systems.**

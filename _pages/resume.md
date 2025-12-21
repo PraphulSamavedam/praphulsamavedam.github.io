@@ -11,39 +11,25 @@ redirect_from:
   - /downloadresume/
 ---
 
-My resume is tailored to specific opportunities to highlight the most relevant experience and skills. Below are role-focused versions optimized for different engineering positions.
+## Tailored for Every Opportunity
 
-**For the most current version or a custom resume tailored to your opportunity, please contact me via [email](mailto:praphulsamavedam@gmail.com) or [LinkedIn](https://www.linkedin.com/in/smpraphul).**
+My resume is customized to highlight the most relevant experience and skills for each specific opportunity. I maintain role-focused versions optimized for different engineering positions including:
 
----
-
-## Software Development Engineer - AI/ML Systems
-
-Focused on distributed AI systems, production ML infrastructure, and large-scale ML engineering.
-
-**Interactive version:** [View](../files/Resume-SamavedamManikhantaPraphul-MLE.pdf) | [Download](https://github.com/PraphulSamavedam/praphulsamavedam.github.io/raw/master/files/Resume-SamavedamManikhantaPraphul-MLE.pdf)
-
-**Paper version:** [View](../files/PaperResume-SamavedamManikhantaPraphul-MLE.pdf) | [Download](https://github.com/PraphulSamavedam/praphulsamavedam.github.io/raw/master/files/PaperResume-SamavedamManikhantaPraphul-MLE.pdf)
+- **Software Development Engineer - AI/ML Systems**: Distributed AI systems, production ML infrastructure, large-scale engineering
+- **Machine Learning Engineer - Research & Development**: AI research, model development, innovative ML solutions
+- **Data Scientist / ML Engineer**: Data analysis, predictive modeling, end-to-end ML pipelines
 
 ---
 
-## Machine Learning Engineer - Research & Development
+## Get My Resume
 
-Emphasizes AI research, model development, and innovative ML solutions.
+**For the most current version or a resume tailored to your specific opportunity, please reach out with the job description:**
 
-**Interactive version:** [View](../files/Resume-SamavedamManikhantaPraphul-ML-RD.pdf) | [Download](https://github.com/PraphulSamavedam/praphulsamavedam.github.io/raw/master/files/Resume-SamavedamManikhantaPraphul-ML-RD.pdf)
+📧 **Email**: [praphulsamavedam@gmail.com](mailto:praphulsamavedam@gmail.com)
 
-**Paper version:** [View](../files/PaperResume-SamavedamManikhantaPraphul-ML-RD.pdf) | [Download](https://github.com/PraphulSamavedam/praphulsamavedam.github.io/raw/master/files/PaperResume-SamavedamManikhantaPraphul-ML-RD.pdf)
+💼 **LinkedIn**: [linkedin.com/in/smpraphul](https://www.linkedin.com/in/smpraphul)
 
----
-
-## Data Scientist / ML Engineer
-
-Highlights data analysis, predictive modeling, and end-to-end ML pipeline development.
-
-**Interactive version:** [View](../files/Resume-SamavedamManikhantaPraphul-DataScientist.pdf) | [Download](https://github.com/PraphulSamavedam/praphulsamavedam.github.io/raw/master/files/Resume-SamavedamManikhantaPraphul-DataScientist.pdf)
-
-**Paper version:** [View](../files/PaperResume-SamavedamManikhantaPraphul-DataScientist.pdf) | [Download](https://github.com/PraphulSamavedam/praphulsamavedam.github.io/raw/master/files/PaperResume-SamavedamManikhantaPraphul-DataScientist.pdf)
+I'll provide a version optimized for the role and company you're considering.
 
 ---
 
