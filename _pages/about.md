@@ -18,30 +18,25 @@ Building the future of Artificial General Intelligence at **Amazon AGI**, where 
 With **5+ years** engineering highly-scaled production ML systems across **Amazon, Nvidia, UBS, BNY Mellon, and innovative AI startups**, I specialize in the full ML lifecycle—from **pre-training and post-training (SFT, RLHF)** of large language models to **deploying multi-agent agentic systems** on distributed Kubernetes clusters processing petabyte-scale data.
 
 ---
+### Professional Experience
 
-## What I Build
+**5+ years** engineering production ML systems at scale across **Amazon, Nvidia, UBS, BNY Mellon, and innovative AI startups**:
 
-At Amazon's AGI division, I architect **production ML infrastructure** that powers AI systems at scale:
+**Technical Depth:**
+- **LLM Infrastructure**: Pre-training data pipelines for foundation models, post-training systems (SFT, RLHF, DPO, PPO), distributed training optimization across multi-GPU/TPU clusters
+- **Kubernetes Expertise**: Deep hands-on experience architecting ML platforms—custom operators, GPU scheduling, multi-tenant clusters, service mesh integration, autoscaling, observability at scale
+- **Production ML Workloads**: Serving billion-parameter models with low-latency inference, real-time prediction pipelines, distributed systems design
+- **Multi-Agent Systems**: Designing and deploying agentic AI solutions with tool-use, reasoning, and autonomous decision-making at scale
+- **GPU-Accelerated Computing**: Optimizing CUDA kernels, mixed-precision training, multi-GPU training for high compute efficiency
 
-**LLM Training & Fine-tuning Pipelines**
-- Pre-training infrastructure for foundation models processing massive datasets
-- Post-training systems: Supervised Fine-Tuning (SFT), Reinforcement Learning from Human Feedback (RLHF)
-- Distributed training orchestration across multi-GPU/TPU clusters
+### Competition Wins & Recognition
+- 🥇 **1st Place** - UBS Superstars Hackathon | Real-time Sign Language Translation
+- 🏆 **Top 5** - Kaggle Image Popularity Challenge
+- 🏆 **Top 14/6,828** - Sales Forecasting Challenge (Top 0.2% globally)
 
-**Agentic AI Systems**
-- Multi-agent architectures with reasoning, planning, and tool-use capabilities
-- Production deployment of autonomous agents processing real-world workloads
-- Agent orchestration and coordination at scale
-
-**Kubernetes-Native ML Infrastructure**
-- Deep expertise: custom operators, GPU scheduling, multi-tenant clusters
-- Service mesh integration, autoscaling, observability at scale
-- Production-grade ML platforms handling thousands of compute nodes
-
-**Production ML Systems**
-- Serving billion-parameter models with low-latency inference
-- Real-time prediction pipelines, distributed systems design
-- GPU-accelerated computing: CUDA optimization, mixed-precision training
+**Graduate Research Assistant** | CHATS & PEACH Labs
+- **C**onversation, **H**uman-**A**I **T**echnology, **S**afety (CHATS) Lab
+- **P**rivacy-**E**nabling **A**I and **C**omputer- **H**uman Interaction (PEACH) Lab
 
 ---
 
@@ -52,23 +47,6 @@ At Amazon's AGI division, I architect **production ML infrastructure** that powe
 - **B.E. (Hons) in Electrical & Electronics Engineering** | BITS-Pilani | India's #1 Private University
 
 My interdisciplinary background—from hardware architecture and electrical engineering to advanced AI—enables me to design optimized ML infrastructure and multi-agent systems that consider the full stack, from distributed system design and algorithm optimization to hardware acceleration on GPUs, TPUs, and custom AI accelerators.
-
-### Professional Experience
-
-**5+ years** engineering production ML systems at scale across **Amazon, Nvidia, UBS, BNY Mellon, and innovative AI startups**:
-
-**Technical Depth:**
-- **LLM Infrastructure**: Pre-training data pipelines, post-training systems (SFT, RLHF), distributed training optimization
-- **Kubernetes Expertise**: Deep hands-on experience architecting ML platforms—custom operators, GPU scheduling, multi-tenant clusters, service mesh integration, observability at scale
-- **Production ML Workloads**: Serving billion-parameter models, low-latency inference systems, real-time prediction pipelines
-- **Distributed Systems**: Building fault-tolerant, highly-available ML systems spanning thousands of compute nodes
-- **Multi-Agent Systems**: Designing and deploying agentic AI solutions with tool-use, reasoning, and autonomous decision-making
-- **GPU-Accelerated Computing**: Optimizing CUDA kernels, multi-GPU training pushing for high compute efficiency.
-
-### Competition Wins & Recognition
-- 🥇 **1st Place** - UBS Superstars Hackathon | Real-time Sign Language Translation
-- 🏆 **Top 5** - Kaggle Image Popularity Challenge
-- 🏆 **Top 14/6,828** - Sales Forecasting Challenge (Top 0.2% globally) 
 
 <!-- TECHNICAL PROJECTS - Commented out to reduce repetition, full details available on Portfolio page
 ### Technical Projects
@@ -96,9 +74,8 @@ Explore my [complete portfolio](https://praphulsamavedam.github.io/portfolio/) f
 **Former President** | Google Developer Student Club (GDSC), Northeastern University
 Led technical workshops, events, and community building initiatives connecting 100+ students with cutting-edge technologies and industry best practices.
 
-**Graduate Research Assistant** | CHATS & PEACH Labs
-- **C**onversation, **H**uman-**A**I **T**echnology, **S**afety (CHATS) Lab
-- **P**rivacy-**E**nabling **A**I and **C**omputer- **H**uman Interaction (PEACH) Lab
+**Former Coordinator** | National Service Scheme (NSS), BITS-Pilani
+Led smooth functioning of 140+ volunteer organization driving education at grassroots levels in 7 rural villages around Pilani and led enrollment of 6 kids of construction workers in partnership with Nirmaan NGO.
 
 <!-- ACADEMIC CONTENT - Hidden for professional portfolio -->
 <!--
