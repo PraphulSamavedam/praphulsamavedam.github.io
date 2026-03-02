@@ -197,6 +197,14 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+  # ARCHIVED COLLECTIONS - Early work kept for reference but not prominently displayed
+  early_work:
+    output: false
+    permalink: /:collection/:path/
+  early_career:
+    output: false
+    permalink: /:collection/:path/
+
   # ACADEMIC COLLECTIONS - Hidden for professional portfolio (kept for easy restoration)
   # Uncomment these sections to restore academic content
   # teaching:
