@@ -26,10 +26,33 @@ India
 ## Duration
 July 2018 - March 2022
 
-<!--
 ## Overview
-Responsible for developing key performance indicators (KPIs), predictive models and data-driven interactive insights dashboards for senior management members processing millions of records in cross-functional teams of Investment Banking (IB), Wealth Management Americas (WMA), Group Technology.
--->
+**Promoted from Graduate Engineer to ML Engineer-II within 2 years** for exceptional performance delivering production ML systems across Investment Banking and Wealth Management divisions at UBS.
+
+**Impact Highlights:**
+- Developed predictive models and real-time analytics pipelines processing 50M+ records daily
+- Built executive dashboards enabling data-driven decision-making for 50+ senior executives globally
+- Delivered ML solutions across Investment Banking, Wealth Management Americas, and Group Technology
+- **🥇 Won 1st Place** in UBS Superstars Hackathon (200+ participants) for real-time sign language translation system
+
+**Core Responsibilities:**
+- **Machine Learning:** Built classification, regression, and anomaly detection models for client analytics, risk management, and operational efficiency
+- **Data Engineering:** Designed ETL pipelines aggregating data from 15+ source systems, ensuring data quality and real-time availability
+- **Analytics & Reporting:** Created interactive Tableau/PowerBI dashboards with KPIs for executive decision-making
+- **Production Deployment:** Deployed models on scalable infrastructure handling millions of daily predictions with <100ms latency
+- **Cross-functional Collaboration:** Worked closely with product managers, business stakeholders, and engineering teams to translate business requirements into technical solutions
+
+**Technical Environment:**
+- **ML/AI:** Python (Scikit-learn, XGBoost, TensorFlow), Statistical Modeling, Anomaly Detection, Time-Series Forecasting
+- **Data Engineering:** SQL (Teradata, Oracle), ETL Pipelines, Data Quality Frameworks, Airflow
+- **Cloud & DevOps:** Docker, Kubernetes, Jenkins (CI/CD), Git
+- **Visualization:** Tableau, PowerBI, Interactive Dashboards
+- **Domains:** Investment Banking, Wealth Management, Risk & Compliance
+
+**Recognition & Growth:**
+- Promoted from Graduate Engineer → ML Engineer-I → ML Engineer-II (within 24 months)
+- Received exceptional performance reviews from Product Manager and Team Manager (see recommendations below)
+- Selected for high-visibility projects with C-level stakeholders
 
 ## Team details
 ### Product manager: [Jan Rashid](https://www.linkedin.com/in/jan-rashid-a8172512)    
