@@ -1,0 +1,56 @@
+---
+title: Projects
+description: Technical projects in ML, Computer Vision, and NLP
+---
+<div id="proj-controls"><div class="dropdown-filters"><strong class="filter-label">Filters</strong><div class="dropdown"><button class="dropdown-toggle">Domain ▾</button><div class="dropdown-menu"><label><input type="checkbox" value="cv" /> Computer Vision</label><label><input type="checkbox" value="nlp" /> NLP</label><label><input type="checkbox" value="ml" /> Applied ML</label><label><input type="checkbox" value="competition" /> Competition</label></div></div><div class="dropdown"><button class="dropdown-toggle">Tech ▾</button><div class="dropdown-menu"><label><input type="checkbox" value="pytorch" /> PyTorch</label><label><input type="checkbox" value="python" /> Python</label><label><input type="checkbox" value="xgboost" /> XGBoost</label><label><input type="checkbox" value="transformers" /> Transformers</label></div></div></div></div>
+<div class="project-grid" id="proj-grid">
+<div class="project-card" data-tags="cv pytorch python">
+<h3><a href="/projects/table-tennis-tracking/">Live Table Tennis Tracking</a></h3>
+<p>Real-time CV system for autonomous game scoring. Hybrid classical + deep learning approach achieving 94.7% tracking accuracy at 30 FPS.</p>
+<span class="tag tag-domain">Computer Vision</span> <span class="tag tag-lang">Python</span> <span class="tag tag-lang">PyTorch</span> <span class="tag tag-tech">YOLO</span> <span class="tag tag-tech">UNet</span> <span class="tag tag-tech">OpenCV</span>
+</div>
+<div class="project-card" data-tags="nlp pytorch python transformers">
+<h3><a href="/projects/natural-language-inference/">Natural Language Inference</a></h3>
+<p>Systematic comparison from classical ML to BERT for NLI. Production optimization with quantization and distillation.</p>
+<span class="tag tag-domain">NLP</span> <span class="tag tag-lang">Python</span> <span class="tag tag-lang">PyTorch</span> <span class="tag tag-tech">BERT</span> <span class="tag tag-tech">Transformers</span> <span class="tag tag-tech">ONNX</span>
+</div>
+<div class="project-card" data-tags="ml competition python xgboost">
+<h3><a href="/projects/store-sales-forecasting/">Store Sales Forecasting</a></h3>
+<p><strong>Top 14/6,828 (0.2%)</strong> — XGBoost with engineered temporal features for retail forecasting.</p>
+<span class="tag tag-domain">Applied ML</span> <span class="tag tag-domain">Competition</span> <span class="tag tag-lang">Python</span> <span class="tag tag-tech">XGBoost</span> <span class="tag tag-tech">Scikit-learn</span>
+</div>
+</div>
+
+<script>{`
+document.addEventListener('DOMContentLoaded', function(){
+  var ctrls = document.getElementById('proj-controls');
+  if(!ctrls) return;
+  ctrls.querySelectorAll('.dropdown-toggle').forEach(function(btn){
+    btn.onclick = function(e){ e.stopPropagation(); var m=this.nextElementSibling; m.style.display=m.style.display==='block'?'none':'block'; };
+  });
+  ctrls.querySelectorAll('.dropdown-menu').forEach(function(m){
+    m.onclick = function(e){ e.stopPropagation(); };
+  });
+  ctrls.querySelectorAll('input[type=checkbox]').forEach(function(cb){
+    cb.onchange = function(){ window.applyProjFilters(); };
+  });
+  document.addEventListener('click', function(e){ if(!e.target.closest('.dropdown')) document.querySelectorAll('#proj-controls .dropdown-menu').forEach(function(m){m.style.display='none';}); });
+});
+window.applyProjFilters = function() {
+  var cards = document.querySelectorAll('#proj-grid .project-card');
+  var groups = document.querySelectorAll('#proj-controls .dropdown-menu');
+  cards.forEach(function(card){
+    var tags = card.getAttribute('data-tags').split(' ');
+    var show = true;
+    groups.forEach(function(group){
+      var checked = [];
+      group.querySelectorAll('input[type=checkbox]').forEach(function(c){ if(c.checked) checked.push(c.value); });
+      if(checked.length === 0) return;
+      var match = false;
+      for(var i=0;i<tags.length;i++){ if(checked.indexOf(tags[i])!==-1){match=true;break;} }
+      if(!match) show = false;
+    });
+    card.style.display = show ? '' : 'none';
+  });
+};
+`}</script>
