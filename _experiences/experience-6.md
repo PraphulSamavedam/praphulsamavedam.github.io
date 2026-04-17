@@ -3,7 +3,7 @@ collection: experiences
 permalink: /experiences/experience-6
 title: Software Development Engineer @ Amazon AGI
 company: Amazon
-duration: January 2024 - Present
+duration: January 2025 - Present
 manager: Vishal Khandelwal
 ---
 

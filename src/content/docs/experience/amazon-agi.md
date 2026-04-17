@@ -3,16 +3,12 @@ title: Software Development Engineer — Amazon AGI
 description: Large-scale ML infrastructure for LLM training and serving workflows
 ---
 
-## Company
-[Amazon](https://www.linkedin.com/company/amazon/) — AGI Team
+## [Amazon](https://www.linkedin.com/company/amazon/) — AGI Team
 
-## Location
-United States
-
-## Duration
-January 2024 – Present
+> 📍 United States · 📅 January 2025 – Present
 
 ## Overview
+
 Working on large-scale ML infrastructure within Amazon's AGI organization, focused on building reliable systems that support LLM training and serving workflows.
 
 **Key Areas:**
@@ -23,7 +19,7 @@ Working on large-scale ML infrastructure within Amazon's AGI organization, focus
 
 **Technical Environment:**
 - **ML/AI:** Python, PyTorch, distributed training frameworks
-- **Infrastructure:** Kubernetes, Docker, AWS (EC2, S3, SageMaker)
+- **Infrastructure:** Kubernetes, Docker, AWS (EC2, S3, SageMaker), Rust (K8s operators)
 - **Systems:** Distributed systems design, GPU cluster management, CI/CD pipelines
 
 **Why This Role:**

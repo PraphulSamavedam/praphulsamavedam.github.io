@@ -3,16 +3,12 @@ title: ML Engineer Intern — Sway AI
 description: Cloud-agnostic no-code AI platform for enterprise ML deployment
 ---
 
-## Company
-[Sway AI](https://www.linkedin.com/company/swayai/)
+## [Sway AI](https://www.linkedin.com/company/swayai/)
 
-## Location
-Burlington (Boston), Massachusetts, USA
-
-## Duration
-July 2023 – December 2023
+> 📍 Burlington (Boston), MA · 📅 July 2023 – December 2023
 
 ## Overview
+
 Developed ML capabilities for Sway AI's cloud-agnostic no-code AI platform, enabling business users to build, train, and deploy production ML models without coding across AWS, GCP, and Azure environments.
 
 **Key Contributions:**

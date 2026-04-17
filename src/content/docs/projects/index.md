@@ -2,63 +2,50 @@
 title: Projects
 description: Technical projects in ML, Computer Vision, and NLP
 ---
-
-<div class="filter-bar">
-  <button class="filter-btn active" data-filter="all">All</button>
-  <button class="filter-btn" data-filter="cv">Computer Vision</button>
-  <button class="filter-btn" data-filter="nlp">NLP</button>
-  <button class="filter-btn" data-filter="ml">Applied ML</button>
-  <button class="filter-btn" data-filter="competition">Competition</button>
+<div class="dropdown-filters">
+<div class="dropdown"><button class="dropdown-toggle">Domain ▾</button><div class="dropdown-menu">
+<label><input type="checkbox" value="cv" checked> Computer Vision</label>
+<label><input type="checkbox" value="nlp" checked> NLP</label>
+<label><input type="checkbox" value="ml" checked> Applied ML</label>
+<label><input type="checkbox" value="competition" checked> Competition</label>
+</div></div>
+<div class="dropdown"><button class="dropdown-toggle">Tech ▾</button><div class="dropdown-menu">
+<label><input type="checkbox" value="pytorch" checked> PyTorch</label>
+<label><input type="checkbox" value="python" checked> Python</label>
+<label><input type="checkbox" value="xgboost" checked> XGBoost</label>
+<label><input type="checkbox" value="transformers" checked> Transformers</label>
+</div></div>
 </div>
 
 <div class="project-grid">
 
-<div class="project-card" data-tags="cv">
+<div class="project-card" data-tags="cv pytorch python">
 
 ### [Live Table Tennis Tracking](/projects/table-tennis-tracking/)
 Real-time CV system for autonomous game scoring. Hybrid classical + deep learning approach achieving 94.7% tracking accuracy at 30 FPS.
 
-<span class="tag">Computer Vision</span> <span class="tag">PyTorch</span> <span class="tag">YOLO</span> <span class="tag">UNet</span>
+<span class="tag tag-domain">Computer Vision</span> <span class="tag tag-lang">Python</span> <span class="tag tag-lang">PyTorch</span> <span class="tag tag-tech">YOLO</span> <span class="tag tag-tech">UNet</span> <span class="tag tag-tech">OpenCV</span>
 
 </div>
 
-<div class="project-card" data-tags="nlp">
+<div class="project-card" data-tags="nlp pytorch python transformers">
 
 ### [Natural Language Inference](/projects/natural-language-inference/)
 Systematic comparison from classical ML to BERT for NLI. Production optimization with quantization and distillation.
 
-<span class="tag">NLP</span> <span class="tag">BERT</span> <span class="tag">Transformers</span> <span class="tag">PyTorch</span>
+<span class="tag tag-domain">NLP</span> <span class="tag tag-lang">Python</span> <span class="tag tag-lang">PyTorch</span> <span class="tag tag-tech">BERT</span> <span class="tag tag-tech">Transformers</span> <span class="tag tag-tech">ONNX</span>
 
 </div>
 
-<div class="project-card" data-tags="ml competition">
+<div class="project-card" data-tags="ml competition python xgboost">
 
 ### [Store Sales Forecasting](/projects/store-sales-forecasting/)
 **Top 14/6,828 (0.2%)** — XGBoost with engineered temporal features for retail forecasting.
 
-<span class="tag">Applied ML</span> <span class="tag">XGBoost</span> <span class="tag">Competition</span>
+<span class="tag tag-domain">Applied ML</span> <span class="tag tag-domain">Competition</span> <span class="tag tag-lang">Python</span> <span class="tag tag-tech">XGBoost</span> <span class="tag tag-tech">Scikit-learn</span>
 
 </div>
 
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const btns = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.project-card');
-  btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      btns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      cards.forEach(card => {
-        if (filter === 'all' || card.dataset.tags.includes(filter)) {
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-    });
-  });
-});
-</script>
+

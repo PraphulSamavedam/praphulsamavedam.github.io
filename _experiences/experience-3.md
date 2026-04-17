@@ -1,15 +1,11 @@
 ---
 collection: experiences
 permalink: /experiences/experience-3  
-title: Machine Learning Engineer - I, II @ UBS <img 
-src="/images/workExp/ubs-logo.png" alt="UBS logo">    
+title: 'Machine Learning Engineer - I, II @ UBS <img src="/images/workExp/ubs-logo.png" alt="UBS logo">'
 company: UBS 
 duration: July 2018 - March 2022
-<!-- 
-location: Pune, India.     
-excerpt: Responsible for developing key performance indicators (KPIs), 
-predictive models and data-driven interactive insights dashboards for senior management members in the Investment Banking division.
--->
+# location: Pune, India.
+# excerpt: Responsible for developing key performance indicators (KPIs), predictive models and data-driven interactive insights dashboards for senior management members in the Investment Banking division.
 ---
 
 ## Title

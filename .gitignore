@@ -1,3 +1,10 @@
 _site/
 .idea
 /_data/comments/
+
+node_modules/
+dist/
+.astro/
+.bundle/
+.jekyll-metadata
+*.log
