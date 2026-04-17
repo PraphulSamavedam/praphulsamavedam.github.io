@@ -49,10 +49,6 @@ export default defineConfig({
         { label: 'Publications', slug: 'publications' },
       ],
       customCss: ['./src/styles/custom.css'],
-      head: [
-        { tag: 'script', attrs: { src: '/scripts/experience-filter.js' } },
-        { tag: 'script', attrs: { src: '/scripts/project-filter.js' } },
-      ],
     }),
   ],
 });

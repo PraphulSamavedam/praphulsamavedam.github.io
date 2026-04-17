@@ -1,28 +1,42 @@
 window.addEventListener('load', function() {
-  var checkboxes = document.querySelectorAll('.dropdown-menu input[type="checkbox"]');
   var cards = document.querySelectorAll('.project-card');
-  if (!checkboxes.length || !cards.length) return;
+  if (!cards.length) return;
 
-  document.querySelectorAll('.dropdown-toggle').forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
+  var container = cards[0].parentElement;
+  var dropdowns = container.parentElement.querySelectorAll('.dropdown');
+  var checkboxes = container.parentElement.querySelectorAll('input[type="checkbox"]');
+
+  // Dropdowns
+  dropdowns.forEach(function(dd) {
+    var btn = dd.querySelector('.dropdown-toggle');
+    var menu = dd.querySelector('.dropdown-menu');
+    btn.onclick = function(e) {
       e.stopPropagation();
-      var menu = btn.nextElementSibling;
-      document.querySelectorAll('.dropdown-menu.open').forEach(function(m) { if (m !== menu) m.classList.remove('open'); });
-      menu.classList.toggle('open');
-    });
+      var wasOpen = menu.style.display === 'block';
+      container.parentElement.querySelectorAll('.dropdown-menu').forEach(function(m) { m.style.display = 'none'; });
+      menu.style.display = wasOpen ? 'none' : 'block';
+    };
   });
-  document.addEventListener('click', function() { document.querySelectorAll('.dropdown-menu.open').forEach(function(m) { m.classList.remove('open'); }); });
-  document.querySelectorAll('.dropdown-menu').forEach(function(m) { m.addEventListener('click', function(e) { e.stopPropagation(); }); });
+  document.onclick = function() {
+    container.parentElement.querySelectorAll('.dropdown-menu').forEach(function(m) { m.style.display = 'none'; });
+  };
 
+  // Filter
   function applyFilters() {
-    var checked = Array.from(checkboxes).filter(function(c) { return c.checked; }).map(function(c) { return c.value; });
+    var checked = [];
+    checkboxes.forEach(function(c) { if (c.checked) checked.push(c.value); });
     var allChecked = checked.length === checkboxes.length;
     cards.forEach(function(c) {
-      if (allChecked) { c.classList.remove('hidden'); return; }
-      var tags = c.dataset.tags.split(' ');
-      var match = tags.some(function(t) { return checked.indexOf(t) !== -1; });
-      if (match) { c.classList.remove('hidden'); } else { c.classList.add('hidden'); }
+      if (allChecked) { c.style.display = ''; return; }
+      var tags = c.getAttribute('data-tags').split(' ');
+      var match = false;
+      for (var i = 0; i < tags.length; i++) {
+        if (checked.indexOf(tags[i]) !== -1) { match = true; break; }
+      }
+      c.style.display = match ? '' : 'none';
     });
   }
-  checkboxes.forEach(function(cb) { cb.addEventListener('change', applyFilters); });
+  checkboxes.forEach(function(cb) { cb.onchange = applyFilters; });
+
+  console.log('Project filter initialized:', checkboxes.length, 'checkboxes,', cards.length, 'cards');
 });

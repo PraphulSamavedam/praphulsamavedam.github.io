@@ -1,0 +1,127 @@
+---
+title: Experience
+description: 5+ years across Amazon AGI, Nvidia, UBS, BNY Mellon, and AI startups
+---
+<div id="exp-controls">
+<div class="dropdown-filters">
+<span class="filter-label">Filters</span>
+<div class="dropdown">
+<button class="dropdown-toggle">Domain ▾</button>
+<div class="dropdown-menu">
+<label><input type="checkbox" value="llm" /> LLM</label>
+<label><input type="checkbox" value="genai" /> GenAI</label>
+<label><input type="checkbox" value="ml-systems" /> ML Systems</label>
+<label><input type="checkbox" value="agentic" /> Agentic Systems</label>
+<label><input type="checkbox" value="data-eng" /> Data Engineering</label>
+<label><input type="checkbox" value="hardware" /> Hardware</label>
+</div>
+</div>
+<div class="dropdown">
+<button class="dropdown-toggle">Language ▾</button>
+<div class="dropdown-menu">
+<label><input type="checkbox" value="python" /> Python</label>
+<label><input type="checkbox" value="rust" /> Rust</label>
+<label><input type="checkbox" value="sql" /> SQL</label>
+<label><input type="checkbox" value="java" /> Java</label>
+</div>
+</div>
+<div class="dropdown">
+<button class="dropdown-toggle">Tech ▾</button>
+<div class="dropdown-menu">
+<label><input type="checkbox" value="pytorch" /> PyTorch</label>
+<label><input type="checkbox" value="kubernetes" /> Kubernetes</label>
+<label><input type="checkbox" value="aws" /> AWS</label>
+<label><input type="checkbox" value="docker" /> Docker</label>
+<label><input type="checkbox" value="tensorflow" /> TensorFlow</label>
+</div>
+</div>
+</div>
+<div class="dropdown-filters">
+<span class="filter-label">Sort by</span>
+<select class="sort-select">
+<option value="start-desc">Latest to Earliest</option>
+<option value="start-asc">Earliest to Latest</option>
+<option value="duration-desc">Most Time to Least</option>
+<option value="duration-asc">Least Time to Most</option>
+</select>
+</div>
+</div>
+<div class="project-grid" id="exp-grid">
+<div class="experience-card" data-tags="python rust pytorch kubernetes aws llm genai ml-systems agentic" data-start="2025-01" data-months="15">
+<h3><a href="/experience/amazon-agi/">Software Development Engineer — Amazon AGI</a></h3>
+<span class="duration">📅 Jan 2025 – Present · 1+ year</span>
+<p>Large-scale ML infrastructure for LLM training and serving workflows. Distributed training pipelines, Kubernetes-based ML platforms, and multi-agent system infrastructure.</p>
+<span class="tag tag-lang">Python</span> <span class="tag tag-lang">PyTorch</span> <span class="tag tag-lang">Rust</span> <span class="tag tag-tech">Kubernetes</span> <span class="tag tag-tech">AWS</span> <span class="tag tag-domain">Distributed Systems</span>
+</div>
+<div class="experience-card" data-tags="python pytorch tensorflow docker aws kubernetes genai ml-systems" data-start="2023-07" data-months="6">
+<h3><a href="/experience/sway-ai/">ML Engineer Intern — Sway AI</a></h3>
+<span class="duration">📅 Jul 2023 – Dec 2023 · 6 months</span>
+<p>Cloud-agnostic no-code AI platform. One-click deployment to AWS, GCP, and Azure.</p>
+<span class="tag tag-lang">Python</span> <span class="tag tag-lang">TensorFlow</span> <span class="tag tag-lang">PyTorch</span> <span class="tag tag-tech">Docker</span> <span class="tag tag-tech">SageMaker</span>
+</div>
+<div class="experience-card" data-tags="python sql docker data-eng ml-systems" data-start="2022-04" data-months="5">
+<h3><a href="/experience/bny-mellon/">ML Engineer — BNY Mellon</a></h3>
+<span class="duration">📅 Apr 2022 – Aug 2022 · 5 months</span>
+<p>Automated control analytics and risk monitoring. Real-time anomaly detection over $2T+ in assets under custody.</p>
+<span class="tag tag-lang">Python</span> <span class="tag tag-lang">SQL</span> <span class="tag tag-tech">Tableau</span> <span class="tag tag-tech">Airflow</span>
+</div>
+<div class="experience-card" data-tags="python sql docker kubernetes data-eng ml-systems" data-start="2018-07" data-months="44">
+<h3><a href="/experience/ubs/">ML Engineer I &amp; II — UBS</a></h3>
+<span class="duration">📅 Jul 2018 – Mar 2022 · 3.5 years</span>
+<p>Promoted twice in 24 months. Production ML across Investment Banking and Wealth Management. 50M+ records/day. 🥇 1st Place UBS Hackathon.</p>
+<span class="tag tag-lang">Python</span> <span class="tag tag-lang">SQL</span> <span class="tag tag-tech">XGBoost</span> <span class="tag tag-tech">Docker</span> <span class="tag tag-tech">Kubernetes</span>
+</div>
+<div class="experience-card" data-tags="arm gpu hardware" data-start="2017-07" data-months="6">
+<h3><a href="/experience/nvidia/">ASIC Intern (Fall Co-op) — Nvidia</a></h3>
+<span class="duration">📅 Jul 2017 – Dec 2017 · 6 months</span>
+<p>ARM compliance validation for Caramel CPU and Volta GPU. Bare-metal and SoC testing for ARM v8.x.</p>
+<span class="tag tag-tech">ARM v8.x</span> <span class="tag tag-tech">GPU Architecture</span> <span class="tag tag-domain">Hardware Validation</span>
+</div>
+</div>
+
+<script>{`
+document.addEventListener('DOMContentLoaded', function(){
+  var ctrls = document.getElementById('exp-controls');
+  if(!ctrls) return;
+  ctrls.querySelectorAll('.dropdown-toggle').forEach(function(btn){
+    btn.onclick = function(e){ e.stopPropagation(); var m=this.nextElementSibling; m.style.display=m.style.display==='block'?'none':'block'; };
+  });
+  ctrls.querySelectorAll('.dropdown-menu').forEach(function(m){
+    m.onclick = function(e){ e.stopPropagation(); };
+  });
+  ctrls.querySelectorAll('input[type=checkbox]').forEach(function(cb){
+    cb.onchange = function(){ window.applyExpFilters(); };
+  });
+  var sel = ctrls.querySelector('.sort-select');
+  if(sel) sel.onchange = function(){ window.sortExp(this.value); };
+  document.addEventListener('click', function(e){ if(!e.target.closest('.dropdown')) document.querySelectorAll('.dropdown-menu').forEach(function(m){m.style.display='none';}); });
+});
+window.applyExpFilters = function() {
+  var cards = document.querySelectorAll('#exp-grid .experience-card');
+  var groups = document.querySelectorAll('#exp-controls .dropdown-menu');
+  cards.forEach(function(card){
+    var tags = card.getAttribute('data-tags').split(' ');
+    var show = true;
+    groups.forEach(function(group){
+      var checked = [];
+      group.querySelectorAll('input[type=checkbox]').forEach(function(c){ if(c.checked) checked.push(c.value); });
+      if(checked.length === 0) return;
+      var match = false;
+      for(var i=0;i<tags.length;i++){ if(checked.indexOf(tags[i])!==-1){match=true;break;} }
+      if(!match) show = false;
+    });
+    card.style.display = show ? '' : 'none';
+  });
+};
+window.sortExp = function(val) {
+  var grid = document.getElementById('exp-grid');
+  var cards = Array.from(grid.querySelectorAll('.experience-card'));
+  var p = val.split('-'), key = p[0], dir = p[1];
+  cards.sort(function(a,b){
+    var va = key==='duration' ? Number(a.getAttribute('data-months')) : a.getAttribute('data-start');
+    var vb = key==='duration' ? Number(b.getAttribute('data-months')) : b.getAttribute('data-start');
+    return dir==='desc' ? (vb>va?1:-1) : (va>vb?1:-1);
+  });
+  cards.forEach(function(c){ grid.appendChild(c); });
+};
+`}</script>
