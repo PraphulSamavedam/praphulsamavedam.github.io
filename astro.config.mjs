@@ -13,7 +13,7 @@ export default defineConfig({
         { icon: 'email', label: 'Email', href: 'mailto:praphulsamavedam@gmail.com' },
       ],
       sidebar: [
-        { label: 'About', slug: '' },
+        { label: 'About', slug: 'index' },
         {
           label: 'Projects',
           items: [
