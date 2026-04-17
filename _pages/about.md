@@ -13,9 +13,13 @@ redirect_from:
 
 ## Software Development Engineer | Amazon AGI
 
-From electrical engineering and GPU architecture at Nvidia, to building production ML systems in finance at UBS and BNY Mellon, to now working on large-scale AI infrastructure at **Amazon AGI** — my career has been a deliberate progression toward building AI systems that operate reliably at scale.
+5+ years building production‑grade ML systems across Amazon AGI, Nvidia, UBS, and AI startups. I specialize in large‑scale AI infrastructure, multi‑modal models, agentic workflows, and AI systems that move beyond demos into real, measurable product and business impact.
 
-With **5+ years** of experience across **Amazon, Nvidia, UBS, BNY Mellon, and AI startups**, I specialize in the full ML lifecycle — from **LLM pre-training and post-training (SFT, RLHF)** to **deploying distributed ML systems** on Kubernetes.
+At Amazon's AGI team, I design and scale distributed AI systems and LLM‑centric infrastructure with clear observability into compute efficiency, enabling next‑generation agents to learn, reason, and operate reliably at Amazon scale.
+
+I hold an MS in Artificial Intelligence (GPA 4.0/4.0) from Northeastern University (Khoury College of Computer Sciences) and a B.E. (Hons) in Electrical & Electronics from BITS‑Pilani, which allows me to bridge hardware, algorithms, and scalable AI systems.
+
+If you're hiring for AI Engineer or Applied Scientist roles in LLMs, multi‑modal training, agentic systems, or large‑scale ML platforms—or building ambitious AGI‑aligned systems—let's connect. I'm also open to collaborating on AI/ML research papers.
 
 ---
 ### Professional Experience
