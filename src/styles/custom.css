@@ -1,0 +1,77 @@
+/* Portfolio card grid with filtering */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: border-color 0.2s, transform 0.1s;
+}
+
+.project-card:hover {
+  border-color: var(--sl-color-text-accent);
+  transform: translateY(-2px);
+}
+
+.project-card h3 { margin-top: 0; }
+
+/* Tag filter buttons */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.filter-btn {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 2rem;
+  background: transparent;
+  color: var(--sl-color-text);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--sl-color-text-accent);
+  color: var(--sl-color-bg);
+  border-color: var(--sl-color-text-accent);
+}
+
+/* Experience timeline */
+.experience-card {
+  border-left: 3px solid var(--sl-color-text-accent);
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  background: var(--sl-color-bg-nav);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.experience-card h3 { margin-top: 0; }
+.experience-card .duration { color: var(--sl-color-gray-3); font-size: 0.9rem; }
+
+/* Badge/tag styles */
+.tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  background: var(--sl-color-gray-6);
+  color: var(--sl-color-gray-2);
+  margin: 0.15rem;
+}
+
+/* Certification list */
+.cert-list a { text-decoration: none; }
+.cert-list a:hover { text-decoration: underline; }
+
+/* Hide card via filter */
+.project-card.hidden { display: none; }
