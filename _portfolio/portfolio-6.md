@@ -96,7 +96,7 @@ To compensate for model simplicity, we engineered domain-specific features:
 **Results:**
 - **Accuracy:** 87% on MultiNLI matched, 86% on mismatched (OOD generalization)
 - **Inference Latency:** ~25ms per example (batch size 1)
-- **Transfer Learning:** Also evaluated on SNLI (95% accuracy after fine-tuning)
+- **Transfer Learning:** Also evaluated on SNLI (~91% accuracy after fine-tuning)
 
 **Why BERT Excels:**
 - Pre-trained on 3.3B words captures rich linguistic knowledge
@@ -167,7 +167,7 @@ For a production NLI system serving 1M+ requests/day:
 2. **Context is king** for NLI - cross-encoder BERT (87%) beats siamese architectures (82%) by 5%
 3. **Production requires optimization** - raw BERT too slow; quantization + distillation essential
 4. **Latency vs accuracy trade-off** is domain-specific - content moderation needs accuracy, search re-ranking needs speed
-5. **Transfer learning works** - BERT fine-tuned on MultiNLI transfers well to SNLI (95% accuracy)
+5. **Transfer learning works** - BERT fine-tuned on MultiNLI transfers well to SNLI (~91% accuracy)
 
 ## Technologies & Tools
 

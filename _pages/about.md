@@ -11,23 +11,21 @@ redirect_from:
   - /aboutme/
 ---
 
-## Software Development Engineer | Amazon AGI Team
+## Software Development Engineer | Amazon AGI
 
-Building the future of Artificial General Intelligence at **Amazon AGI**, where I architect and scale production ML infrastructure powering next-generation AI systems at unprecedented scale.
+From electrical engineering and GPU architecture at Nvidia, to building production ML systems in finance at UBS and BNY Mellon, to now working on large-scale AI infrastructure at **Amazon AGI** — my career has been a deliberate progression toward building AI systems that operate reliably at scale.
 
-With **5+ years** engineering highly-scaled production ML systems across **Amazon, Nvidia, UBS, BNY Mellon, and innovative AI startups**, I specialize in the full ML lifecycle—from **pre-training and post-training (SFT, RLHF)** of large language models to **deploying multi-agent agentic systems** on distributed Kubernetes clusters processing petabyte-scale data.
+With **5+ years** of experience across **Amazon, Nvidia, UBS, BNY Mellon, and AI startups**, I specialize in the full ML lifecycle — from **LLM pre-training and post-training (SFT, RLHF)** to **deploying distributed ML systems** on Kubernetes.
 
 ---
 ### Professional Experience
 
-**5+ years** engineering production ML systems at scale across **Amazon, Nvidia, UBS, BNY Mellon, and innovative AI startups**:
-
 **Technical Depth:**
-- **LLM Infrastructure**: Pre-training data pipelines for foundation models, post-training systems (SFT, RLHF, DPO, PPO), distributed training optimization across multi-GPU/TPU clusters
-- **Kubernetes Expertise**: Deep hands-on experience architecting ML platforms—custom operators, GPU scheduling, multi-tenant clusters, service mesh integration, autoscaling, observability at scale
-- **Production ML Workloads**: Serving billion-parameter models with low-latency inference, real-time prediction pipelines, distributed systems design
-- **Multi-Agent Systems**: Designing and deploying agentic AI solutions with tool-use, reasoning, and autonomous decision-making at scale
-- **GPU-Accelerated Computing**: Optimizing CUDA kernels, mixed-precision training, multi-GPU training for high compute efficiency
+- **LLM Infrastructure**: Pre-training data pipelines, post-training systems (SFT, RLHF, DPO, PPO), distributed training across multi-GPU clusters
+- **Kubernetes & ML Platforms**: Architecting ML serving infrastructure — GPU scheduling, autoscaling, observability
+- **Production ML**: Low-latency model serving, real-time prediction pipelines, distributed systems design
+- **Multi-Agent Systems**: Designing agentic AI solutions with tool-use and reasoning capabilities
+- **Hardware-Aware ML**: Mixed-precision training, multi-GPU optimization, experience with GPU architecture from Nvidia ASIC work
 
 ### Competition Wins & Recognition
 - 🥇 **1st Place** - UBS Superstars Hackathon | Real-time Sign Language Translation
@@ -46,7 +44,7 @@ With **5+ years** engineering highly-scaled production ML systems across **Amazo
 - **MS in Artificial Intelligence** | Khoury College of Computer Sciences, Northeastern University | **GPA: 4.0/4.0**
 - **B.E. (Hons) in Electrical & Electronics Engineering** | BITS-Pilani | India's #1 Private University
 
-My interdisciplinary background—from hardware architecture and electrical engineering to advanced AI—enables me to design optimized ML infrastructure and multi-agent systems that consider the full stack, from distributed system design and algorithm optimization to hardware acceleration on GPUs, TPUs, and custom AI accelerators.
+My interdisciplinary background — from hardware architecture at Nvidia and electrical engineering at BITS-Pilani to advanced AI at Northeastern — gives me a full-stack perspective on ML systems, from algorithm design to hardware-aware optimization.
 
 <!-- TECHNICAL PROJECTS - Commented out to reduce repetition, full details available on Portfolio page
 ### Technical Projects
@@ -139,5 +137,5 @@ My resume is tailored for each opportunity. Contact me via email or LinkedIn.
 -->
 ---
 
-_Engineering AI systems at scale. Advancing AGI research. Open to collaboration on ambitious problems that push the boundaries of what's possible._
+_Building reliable AI systems at scale. Open to collaboration on challenging ML infrastructure and applied AI problems._
  
