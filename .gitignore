@@ -7,4 +7,5 @@ dist/
 .astro/
 .bundle/
 .jekyll-metadata
-*.log
+**/*.log
+archived

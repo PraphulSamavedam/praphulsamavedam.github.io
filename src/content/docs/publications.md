@@ -1,6 +1,18 @@
 ---
-title: Publications
+title: Research & Publications
 description: Research publications and collaboration interests
+---
+
+## Open to Collaboration
+
+I'm actively interested in collaborating on AI/ML research papers, particularly in:
+- Large language model training and optimization
+- Multi-modal AI systems
+- Distributed ML infrastructure
+- Computer vision applications
+
+If you're working on research in these areas, let's connect: [praphulsamavedam@gmail.com](mailto:praphulsamavedam@gmail.com)
+
 ---
 
 ## IEEE Conference Paper
@@ -26,15 +38,3 @@ This paper presents a hybrid cooperative wireless system consisting of analog an
   doi={10.1109/INFOCOMTECH.2018.8722354}
 }
 ```
-
----
-
-## Open to Collaboration
-
-I'm actively interested in collaborating on AI/ML research papers, particularly in:
-- Large language model training and optimization
-- Multi-modal AI systems
-- Distributed ML infrastructure
-- Computer vision applications
-
-If you're working on research in these areas, let's connect: [praphulsamavedam@gmail.com](mailto:praphulsamavedam@gmail.com)

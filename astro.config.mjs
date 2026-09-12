@@ -7,46 +7,74 @@ export default defineConfig({
     starlight({
       title: 'Praphul Samavedam',
       description: 'Software Development Engineer @ Amazon AGI | AI/ML Portfolio',
+      pagefind: true,
+      head: [
+        {
+          tag: 'script',
+          content: "try { localStorage.setItem('starlight-theme', 'dark'); document.documentElement.dataset.navLayout = localStorage.getItem('portfolio-nav-layout') || 'top'; } catch {}",
+        },
+      ],
+      components: {
+        Header: './src/components/Header.astro',
+      },
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/PraphulSamavedam' },
         { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/smpraphul' },
         { icon: 'email', label: 'Email', href: 'mailto:praphulsamavedam@gmail.com' },
       ],
       sidebar: [
-        { label: 'About', slug: 'index' },
-        {
-          label: 'Projects',
-          items: [
-            { label: 'All Projects', slug: 'projects' },
-            { label: 'Table Tennis Tracking', slug: 'projects/table-tennis-tracking' },
-            { label: 'Natural Language Inference', slug: 'projects/natural-language-inference' },
-            { label: 'Store Sales Forecasting', slug: 'projects/store-sales-forecasting' },
-          ],
-        },
+        { label: 'About', link: '/' },
         {
           label: 'Experience',
           items: [
-            { label: 'All Experience', slug: 'experience' },
-            { label: 'Amazon AGI', slug: 'experience/amazon-agi' },
-            { label: 'Sway AI', slug: 'experience/sway-ai' },
-            { label: 'BNY Mellon', slug: 'experience/bny-mellon' },
-            { label: 'UBS', slug: 'experience/ubs' },
-            { label: 'Nvidia', slug: 'experience/nvidia' },
+            { label: 'All Experience', link: '/experience/' },
+            { label: 'Amazon AGI', link: '/experience/amazon-agi/' },
+            { label: 'Sway AI', link: '/experience/sway-ai/' },
+            { label: 'BNY Mellon', link: '/experience/bny-mellon/' },
+            { label: 'UBS', link: '/experience/ubs/' },
+            { label: 'Nvidia', link: '/experience/nvidia/' },
           ],
         },
-        { label: 'Skills', slug: 'skills' },
+        {
+          label: 'Projects',
+          items: [
+            { label: 'All Projects', link: '/projects/' },
+            {
+              label: 'Courses',
+              items: [
+                { label: 'Course Overview', link: '/projects/courses/' },
+                {
+                  label: 'CS-5100',
+                  autogenerate: { directory: 'projects/courses/CS-5100' },
+                },
+                {
+                  label: 'CS-5330',
+                  autogenerate: { directory: 'projects/courses/CS-5330' },
+                },
+              ],
+            },
+            { label: 'Table Tennis Tracking', link: '/projects/table-tennis-tracking/' },
+            { label: 'Visual LLM for VQA', link: '/projects/visual-llm/' },
+            { label: 'Natural Language Inference', link: '/projects/natural-language-inference/' },
+            { label: 'Store Sales Forecasting', link: '/projects/store-sales-forecasting/' },
+            { label: 'Stock Portfolio Simulation', link: '/projects/stock-portfolio-simulation/' },
+            { label: 'Image Downloads Prediction', link: '/projects/image-downloads-prediction/' },
+            { label: 'Endangered Species Satellite', link: '/projects/endangered-species-satellite/' },
+          ],
+        },
         {
           label: 'Leadership',
           items: [
-            { label: 'All Roles', slug: 'leadership' },
-            { label: 'President — GDSC', slug: 'leadership/gdsc-president' },
-            { label: 'Coordinator — NSS', slug: 'leadership/nss-coordinator' },
-            { label: 'APOGEE — EEE Assoc', slug: 'leadership/apogee-coordinator' },
-            { label: 'Publicity — IEEE', slug: 'leadership/ieee-publicity' },
-            { label: 'Executive — NSS', slug: 'leadership/nss-executive' },
+            { label: 'All Roles', link: '/leadership/' },
+            { label: 'President — GDSC', link: '/leadership/gdsc-president/' },
+            { label: 'Coordinator — NSS', link: '/leadership/nss-coordinator/' },
+            { label: 'APOGEE — EEE Assoc', link: '/leadership/apogee-coordinator/' },
+            { label: 'Publicity — IEEE', link: '/leadership/ieee-publicity/' },
+            { label: 'Executive — NSS', link: '/leadership/nss-executive/' },
           ],
         },
-        { label: 'Publications', slug: 'publications' },
+        { label: 'Research & Publications', link: '/publications/' },
+        { label: 'Skills', link: '/skills/' },
       ],
       customCss: ['./src/styles/custom.css'],
     }),

@@ -5,6 +5,25 @@ description: Programming, ML frameworks, cloud platforms, and certifications
 
 ## Programming Languages
 
+<div class="language-icons" aria-label="Programming languages">
+  <div class="language-icon">
+    <img src="/images/languages/Python-logo.png" alt="Python" />
+    <span>Python</span>
+  </div>
+  <div class="language-icon">
+    <img src="/images/languages/Sql_data_base_with_logo.png" alt="SQL" />
+    <span>SQL</span>
+  </div>
+  <div class="language-icon">
+    <img src="/images/languages/java-logo.png" alt="Java" />
+    <span>Java</span>
+  </div>
+  <div class="language-icon">
+    <img src="/images/languages/Apache_Spark-logo.png" alt="Apache Spark" />
+    <span>Apache Spark</span>
+  </div>
+</div>
+
 **Primary Expertise**
 - **Python** — Production ML systems, distributed computing, data engineering
 - **SQL** — Complex query optimization, database design, data analysis

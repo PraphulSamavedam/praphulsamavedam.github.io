@@ -1,28 +1,26 @@
 ---
-title: Software Development Engineer — Amazon AGI
-description: Large-scale ML infrastructure for LLM training and serving workflows
+title: Software Development Engineer at Amazon
+description: Production AI infrastructure for distributed ML workloads
 ---
 
-## [Amazon](https://www.linkedin.com/company/amazon/) — AGI Team
+## [Amazon](https://www.linkedin.com/company/amazon/)
 
 > 📍 United States · 📅 January 2025 – Present
 
 ## Overview
 
-Working on large-scale ML infrastructure within Amazon's AGI organization, focused on building reliable systems that support LLM training and serving workflows.
+I contribute to production infrastructure for distributed ML workloads running on Kubernetes. My work focuses on workload orchestration, capacity planning, service reliability, observability, validation, and staged production rollout.
 
-**Key Areas:**
-- Building and maintaining distributed ML training pipelines for large language models
-- Developing infrastructure for LLM post-training workflows including SFT and RLHF
-- Designing Kubernetes-based ML serving platforms with GPU scheduling and autoscaling
-- Contributing to multi-agent system infrastructure for agentic AI capabilities
+**Selected Contributions:**
+- Improved observed GPU job wait time through scheduling and capacity improvements.
+- Contributed to cross-layer platform capabilities for workload orchestration and capacity management.
+- Improved workload configuration and validation for more reliable job submission.
+- Contributed to monitoring and reliability improvements for production ML infrastructure.
+- Supported staged rollouts and production verification for distributed ML infrastructure.
+- Investigated reliability and operational issues across distributed services.
 
 **Technical Environment:**
-- **ML/AI:** Python, PyTorch, distributed training frameworks
-- **Infrastructure:** Kubernetes, Docker, AWS (EC2, S3, SageMaker), Rust (K8s operators)
-- **Systems:** Distributed systems design, GPU cluster management, CI/CD pipelines
+- **Platform:** Kubernetes, AWS, distributed systems, service APIs, and GPU-backed workloads
+- **Reliability:** Monitoring, alerting, validation, staged rollout, and operational troubleshooting
 
-**Why This Role:**
-This position represents the convergence of my career trajectory — hardware understanding from Nvidia, production ML experience from UBS/BNY Mellon, and applied ML from Sway AI — now applied to building AI infrastructure at Amazon's scale.
-
-*Note: Specific project details, metrics, and system names are confidential per Amazon's NDA. Happy to discuss the problem space and technical approaches in conversation.*
+Specific implementation details and operational metrics are omitted to respect confidentiality.

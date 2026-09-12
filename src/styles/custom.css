@@ -10,6 +10,7 @@
   border: 1px solid var(--sl-color-gray-5);
   border-radius: 0.5rem;
   padding: 1.25rem;
+  margin-top: 0;
   transition: border-color 0.2s, transform 0.1s;
 }
 
@@ -21,17 +22,56 @@
 .project-card h3 { margin-top: 0; }
 
 /* Dropdown multi-select filters */
-.dropdown-filters {
+#proj-controls {
+  display: block;
+  margin: 1rem 0 2rem;
+}
+#proj-controls .dropdown-filters {
+  display: grid;
+  grid-template-columns: max-content repeat(2, minmax(9.5rem, 10rem));
+  align-items: start;
+  justify-content: start;
+  column-gap: 0.75rem;
+  row-gap: 0.75rem;
+}
+#proj-controls .dropdown-filters > .dropdown {
+  margin-top: 0;
+}
+#exp-controls .sort-controls {
   display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin: 1.5rem 0;
   align-items: center;
+  gap: 0.75rem;
+  margin-top: 0;
+}
+.dropdown-filters {
+  gap: 0.75rem;
+  margin: 0;
+  align-items: center;
+}
+.dropdown-filters .filter-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  margin: 0;
 }
 .dropdown {
   position: relative;
+  flex: none;
+  display: inline-flex;
+  align-items: stretch;
+  align-self: start;
+  width: 100%;
+  height: 2.25rem;
 }
 .dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 8.5rem;
+  height: 2.25rem;
+  margin: 0;
   padding: 0.4rem 0.85rem;
   border: 1px solid var(--sl-color-gray-5);
   border-radius: 0.35rem;
@@ -39,6 +79,7 @@
   color: var(--sl-color-text);
   cursor: pointer;
   font-size: 0.85rem;
+  line-height: 1.2;
   transition: border-color 0.15s;
 }
 .dropdown-toggle:hover {
@@ -71,6 +112,27 @@
 }
 .dropdown-menu label:hover {
   background: var(--sl-color-gray-6);
+}
+
+@media (max-width: 30rem) {
+  #proj-controls .dropdown-filters {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  #exp-controls .sort-controls {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  #proj-controls .dropdown {
+    width: 100%;
+  }
+
+  #proj-controls .dropdown-toggle {
+    width: 100%;
+  }
 }
 
 /* Tag filter buttons (kept for backward compat) */
@@ -163,4 +225,38 @@
 /* Adjust layout widths */
 :root {
   --sl-content-width: 55rem;
+}
+
+/* Desktop navigation can switch between the top bar and Starlight's sidebar. */
+@media (min-width: 50rem) {
+  html[data-nav-layout='top'] {
+    --sl-content-inline-start: 0rem;
+  }
+
+  html[data-nav-layout='top'] .sidebar {
+    display: none;
+  }
+}
+
+/* Keep the restored language marks compact and readable on narrow screens. */
+.language-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 0.75rem 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.language-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 3rem;
+  font-weight: 600;
+}
+
+.language-icon img {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 2.75rem;
+  object-fit: contain;
 }
