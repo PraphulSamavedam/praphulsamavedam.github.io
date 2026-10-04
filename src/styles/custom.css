@@ -241,9 +241,15 @@
 /* Keep the restored language marks compact and readable on narrow screens. */
 .language-icons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem 1rem;
   margin: 1rem 0 1.5rem;
+}
+
+@media (max-width: 30rem) {
+  .language-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .language-icon {
@@ -259,4 +265,35 @@
   height: 2.75rem;
   flex: 0 0 2.75rem;
   object-fit: contain;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  box-sizing: border-box;
+}
+
+/* Hero actions: two rows — row 1 nav (Projects/Experience), row 2 contact (Email/LinkedIn/GitHub).
+   Flex-wrap with a full-width break element (::after) ordered between the two groups,
+   so each row left-aligns independently (grid shares column tracks and misaligns). */
+.hero .sl-flex.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nav links first (order 1), contact links last (order 3) */
+.hero .sl-flex.actions a.sl-link-button:not(.minimal) {
+  order: 1;
+}
+.hero .sl-flex.actions a.sl-link-button.minimal {
+  order: 3;
+}
+
+/* Zero-height full-width break (order 2) forces the contact group onto row 2 */
+.hero .sl-flex.actions::after {
+  content: "";
+  order: 2;
+  flex-basis: 100%;
+  height: 0;
 }

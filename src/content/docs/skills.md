@@ -7,98 +7,88 @@ description: Programming, ML frameworks, cloud platforms, and certifications
 
 <div class="language-icons" aria-label="Programming languages">
   <div class="language-icon">
-    <img src="/images/languages/Python-logo.png" alt="Python" />
+    <img src="/images/languages/python-logo.svg" alt="Python" />
     <span>Python</span>
   </div>
   <div class="language-icon">
-    <img src="/images/languages/Sql_data_base_with_logo.png" alt="SQL" />
+    <img src="/images/languages/rust-logo.svg" alt="Rust" />
+    <span>Rust</span>
+  </div>
+  <div class="language-icon">
+    <img src="/images/languages/sql-logo.svg" alt="SQL" />
     <span>SQL</span>
   </div>
   <div class="language-icon">
-    <img src="/images/languages/java-logo.png" alt="Java" />
+    <img src="/images/languages/java-logo.svg" alt="Java" />
     <span>Java</span>
   </div>
   <div class="language-icon">
-    <img src="/images/languages/Apache_Spark-logo.png" alt="Apache Spark" />
+    <img src="/images/languages/typescript-logo.svg" alt="TypeScript" />
+    <span>TypeScript</span>
+  </div>
+  <div class="language-icon">
+    <img src="/images/languages/cpp-logo.svg" alt="C++" />
+    <span>C++</span>
+  </div>
+  <div class="language-icon">
+    <img src="/images/languages/spark-logo.svg" alt="Apache Spark(PySpark)" />
     <span>Apache Spark</span>
   </div>
 </div>
 
-**Primary Expertise**
-- **Python** — Production ML systems, distributed computing, data engineering
-- **SQL** — Complex query optimization, database design, data analysis
-- **Java** — Enterprise applications, backend services
-- **C++** — Performance-critical systems, algorithm optimization
-
-**Additional Experience**
-- MATLAB — Scientific computing, signal processing
-- Apache Spark — Large-scale data processing
+- **Python** — ML pipelines, model training & deployment infrastructure, distributed training, data processing, and APIs
+- **Rust** — Performance-critical distributed ML infrastructure and platform services
+- **SQL** — Data analysis and ETL workflows
+- **Java** — MVC desktop applications and backend design
+- **TypeScript** — Infrastructure-as-code and application configuration
+- **C++** — Real-time computer vision with OpenCV
+- **Apache Spark** — Distributed data processing
 
 ---
 
-## AI/ML Frameworks & Libraries
+## ML Platform & GPU Infrastructure
 
-### Deep Learning Frameworks
-- **PyTorch** — Primary framework for research and production
-- **TensorFlow** — Model deployment and serving
-- **Keras** — Rapid prototyping
+My primary focus: building and operating the infrastructure that runs large-scale ML workloads.
 
-### Computer Vision
-- OpenCV, Torchvision, Pillow, Scikit-Image, Albumentations, MediaPipe
-
-### Natural Language Processing
-- Hugging Face Transformers, NLTK, SpaCy, TextBlob, BERT, RoBERTa
-
-### ML & Data Science
-- Scikit-learn, XGBoost, AdaBoost, H2O, Pandas, NumPy, Matplotlib, Seaborn, Plotly
+- **Distributed GPU training** — multi-node GPU clusters on Kubernetes, GPU scheduling and placement, capacity planning
+- **Workload orchestration** — Kueue (quotas, preemption, gang scheduling); Kubernetes operators and Custom Resource Definitions (CRDs)
+- **Model serving** — low-latency LLM/ML inference serving on Kubernetes with vLLM, SGLang, and TensorRT
+- **Fine-tuning infrastructure** — high-performance shared storage, checkpoint/data pipelines, and GPU scheduling for large-scale model fine-tuning
 
 ---
 
-## ML Model Architectures
+## MLOps, GitOps & Reliability
 
-### Computer Vision
-- **CNNs:** VGG-16, ResNet-50, Inception, EfficientNet
-- **Object Detection:** YOLO, R-CNN family (Fast, Faster, Mask)
-- **Segmentation:** U-Net
-
-### NLP & Language Models
-- **Transformers:** BERT, RoBERTa, BART
-- **Sequence Models:** LSTM, Bi-LSTM, GRU, RNN
-
-### Traditional ML
-- Random Forest, Gradient Boost, XGBoost, AdaBoost, Decision Trees, SVMs
+- **GitOps & IaC** — ArgoCD, Helm charts, AWS CDK (TypeScript)
+- **Policy & security** — Kyverno policy-as-code (admission control), Kubernetes RBAC, Istio service mesh
+- **CI/CD & release** — GitHub Actions, Jenkins, DVC, Apache Airflow, staged rollout, automated change-management and validation
+- **Containers & storage** — Kubernetes, Docker, high-performance shared storage, container registries, image build pipelines
+- **Observability** — Grafana dashboard engineering, Prometheus, CloudWatch; metrics instrumentation, monitoring, alerting, oncall operations, and post-incident review
 
 ---
 
-## Cloud Platforms & Infrastructure
+## Large Language Models & Generative AI
 
-- **AWS** — EC2, S3, Lambda, SageMaker
-- **Microsoft Azure** — AI/ML services, data platforms
-- **Google Cloud Platform** — AI/ML, compute, storage
-
-### Databases
-- Oracle (11g, 12c), MySQL — Complex queries, performance tuning, schema design
-
----
-
-## Development Tools
-
-- **Version Control:** Git, GitHub, GitLab, SVN, Perforce
-- **IDEs:** PyCharm, VS Code, IntelliJ, Jupyter Notebooks
-- **DevOps:** Docker, Apache Airflow, Shell Scripting
-- **Analytics:** Qlikview, Power BI, Tableau
+- **Agentic tooling** — AI coding agents built with the Model Context Protocol (MCP), LLM-assisted code review
+- **Models & frameworks** — Hugging Face Transformers, BERT, Llama 2, Mistral
+- **Fine-tuning & compression** — LoRA / PEFT, INT8 quantization, knowledge distillation, ONNX / TensorRT
+- **RAG & evaluation** — retrieval-augmented generation with vector search (Milvus), prompt engineering, in-context learning, systematic LLM evaluation
+- **Multi-modal** — BLIP captioning + YOLO detection + LLM reasoning (VQA)
 
 ---
 
-## Specializations
+## Machine Learning & Computer Vision
 
-- **Deep Learning** — Neural network architectures, optimization
-- **Computer Vision** — Image classification, object detection, segmentation
-- **NLP** — Text classification, sentiment analysis, language models
-- **Multi-Modal AI** — Vision-language models, cross-modal learning
-- **Production ML** — Model deployment, monitoring, versioning
-- **Distributed Systems** — Scalable architecture, parallel processing
-- **Data Engineering** — ETL pipelines, data quality, large-scale processing
+- **Frameworks** — PyTorch, TensorFlow, Keras, Scikit-learn, XGBoost, LightGBM
+- **Data** — Pandas, NumPy, Matplotlib, Seaborn, Apache Spark
+- **Computer vision** — OpenCV, YOLOv5, U-Net, ResNet-18; CNNs, LSTMs, object detection, segmentation, camera calibration, image retrieval
+
+---
+
+## Cloud & Data
+
+- **Cloud** — AWS (Lambda, SageMaker, EKS, FSx, ECR), Google Cloud (Vertex AI), Azure ML
+- **Data stores & APIs** — DynamoDB, MongoDB, Milvus, REST APIs
 
 ---
 
