@@ -1,5 +1,5 @@
 ---
-title: ML Engineer I & II — UBS
+title: ML Engineer — UBS
 description: Production ML systems across Investment Banking and Wealth Management
 ---
 
@@ -9,7 +9,7 @@ description: Production ML systems across Investment Banking and Wealth Manageme
 
 ## Overview
 
-**Promoted from Graduate Engineer to ML Engineer-II within 2 years** for exceptional performance delivering production ML systems across Investment Banking and Wealth Management divisions at UBS.
+**Promoted from Graduate Engineer to ML Engineer within 2 years** for exceptional performance delivering production ML systems across Investment Banking and Wealth Management divisions at UBS.
 
 **Impact Highlights:**
 - Developed predictive models and real-time analytics pipelines processing 50M+ records daily
@@ -30,7 +30,7 @@ description: Production ML systems across Investment Banking and Wealth Manageme
 - **Cloud & DevOps:** Docker, Kubernetes, Jenkins (CI/CD), Git
 - **Visualization:** Tableau, PowerBI, Interactive Dashboards
 
-**Recognition:** Promoted Graduate Engineer → ML Engineer-I → ML Engineer-II (within 24 months)
+**Recognition:** Promoted Graduate Engineer → ML Engineer (within 24 months)
 
 ## Recommendations
 
