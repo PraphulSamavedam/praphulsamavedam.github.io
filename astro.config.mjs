@@ -67,6 +67,9 @@ export default defineConfig({
           items: [
             { label: 'All Roles', link: '/leadership/' },
             { label: 'President — GDSC', link: '/leadership/gdsc-president/' },
+            { label: 'Senator — GSG', link: '/leadership/gsg-senator/' },
+            { label: 'GSG Rep — KMSC', link: '/leadership/kmsc-gsg-representative/' },
+            { label: 'Brand Team — GDSC', link: '/leadership/gdsc-brand-team/' },
             { label: 'Coordinator — NSS', link: '/leadership/nss-coordinator/' },
             { label: 'APOGEE — EEE Assoc', link: '/leadership/apogee-coordinator/' },
             { label: 'Publicity — IEEE', link: '/leadership/ieee-publicity/' },

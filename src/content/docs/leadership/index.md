@@ -8,9 +8,33 @@ description: Community leadership and technical event organization
 <div class="experience-card">
 
 ### [President — Google Developer Student Club](/leadership/gdsc-president/)
-**Northeastern University, Boston** · 2022–2023
+**Northeastern University, Boston** · Aug 2023 – July 2024
 
-Led 100+ student developers through workshops, hackathons, and speaker events in AI/ML and cloud computing.
+Founded and led the university's GDSC chapter — drove club recognition, built the core team, and hosted workshops (Git, Linux, GitHub, Google Cloud) plus speaker sessions and fireside chats.
+</div>
+
+<div class="experience-card">
+
+### [GSG Representative — Khoury Masters Student Council](/leadership/kmsc-gsg-representative/)
+**Northeastern University, Boston** · Aug 2023 – Feb 2024
+
+Connected KMSC with Graduate Student Governance, fostering partnerships and new community-building initiatives for the CS community.
+</div>
+
+<div class="experience-card">
+
+### [Senator — Graduate Student Governance](/leadership/gsg-senator/)
+**Northeastern University, Boston** · Jan 2023 – July 2023
+
+External Affairs Committee senator representing graduate students and connecting the community with the wider university.
+</div>
+
+<div class="experience-card">
+
+### [Brand Team Member — Google Developer Student Club](/leadership/gdsc-brand-team/)
+**Northeastern University, Boston** · Jan 2023 – Apr 2023
+
+Designed digital banners and event thumbnails for workshops and speaker sessions, building strong team recall among students.
 </div>
 
 <div class="experience-card">
