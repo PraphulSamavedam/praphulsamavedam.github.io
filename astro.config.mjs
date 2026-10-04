@@ -6,7 +6,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Praphul Samavedam',
-      description: 'Software Development Engineer @ Amazon AGI | AI/ML Portfolio',
+      description: 'Software Development Engineer @ Amazon | AI/ML Portfolio',
       pagefind: true,
       head: [
         {
@@ -28,7 +28,7 @@ export default defineConfig({
           label: 'Experience',
           items: [
             { label: 'All Experience', link: '/experience/' },
-            { label: 'Amazon AGI', link: '/experience/amazon-agi/' },
+            { label: 'Amazon', link: '/experience/amazon-agi/' },
             { label: 'Sway AI', link: '/experience/sway-ai/' },
             { label: 'BNY Mellon', link: '/experience/bny-mellon/' },
             { label: 'UBS', link: '/experience/ubs/' },
