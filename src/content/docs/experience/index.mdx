@@ -84,7 +84,7 @@ large-scale AI systems — <a href="https://www.linkedin.com/in/smpraphul">let's
     <div class="lt-logo"><img src="/images/workExp/ubs-logo.png" alt="UBS logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/experience/ubs/">ML Engineer — UBS</a></div>
-      <div class="lt-synopsis">Promoted from Graduate Engineer to ML Engineer. Production ML across Investment Banking and Wealth Management. 50M+ records/day. 🥇 1st Place UBS Hackathon.</div>
+      <div class="lt-synopsis">Promoted within 2 years. Production ML across Investment Banking and Wealth Management. 50M+ records/day. 🥇 1st Place UBS Hackathon.</div>
       <div class="lt-tags"><span class="tag tag-lang">Python</span> <span class="tag tag-lang">SQL</span> <span class="tag tag-tech">XGBoost</span> <span class="tag tag-tech">Docker</span> <span class="tag tag-tech">Kubernetes</span></div>
     </div>
   </div>
@@ -141,6 +141,21 @@ large-scale AI systems — <a href="https://www.linkedin.com/in/smpraphul">let's
     r.addEventListener('mouseenter', () => { hovering = true; setActive(r); });
   });
   tl.addEventListener('mouseleave', () => { hovering = false; pickClosest(); });
+
+  // Whole-card navigation: clicking anywhere on a card with a detail link
+  // navigates to it. The inner title <a> keeps its native behavior (and
+  // keyboard focus), and a text selection does not trigger navigation.
+  rows.forEach((r) => {
+    const link = r.querySelector('.lt-title a');
+    const card = r.querySelector('.lt-card');
+    if (!link || !card) return;
+    card.classList.add('lt-clickable');
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('a')) return;                       // let real links work
+      if (window.getSelection && String(window.getSelection())) return; // ignore text selection
+      window.location.href = link.getAttribute('href');
+    });
+  });
 
   // Sort control: re-append rows in the chosen order. The spine's :last-child
   // shortening follows DOM order automatically, so the rail stays correct.

@@ -3,11 +3,13 @@ title: ASIC Intern (Fall Co-op) — Nvidia
 description: ARM compliance validation for Caramel CPU and Volta GPU
 ---
 
-## [Nvidia](https://www.linkedin.com/company/nvidia/)
-
-> 📍 Bangalore, India · 📅 July 2017 – December 2017
-
-## Overview
+<div class="exp-logo-header">
+  <div class="exp-logo"><img src="/images/workExp/nvidia-logo.png" alt="Nvidia logo" /></div>
+  <div>
+    <div class="exp-co"><a href="https://www.linkedin.com/company/nvidia/">Nvidia ↗</a></div>
+    <div class="exp-sub">📍 Bangalore, India · 📅 Jul 2017 – Dec 2017</div>
+  </div>
+</div>
 
 Maintained Nvidia's internal ARM simulator to support newly added features in ARM v8.x for the **Caramel CPU** and **Volta GPU** to achieve ARM compliance.
 

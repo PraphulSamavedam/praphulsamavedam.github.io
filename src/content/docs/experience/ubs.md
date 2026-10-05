@@ -3,13 +3,15 @@ title: ML Engineer — UBS
 description: Production ML systems across Investment Banking and Wealth Management
 ---
 
-## [UBS](https://www.linkedin.com/company/ubs/)
+<div class="exp-logo-header">
+  <div class="exp-logo"><img src="/images/workExp/ubs-logo.png" alt="UBS logo" /></div>
+  <div>
+    <div class="exp-co"><a href="https://www.linkedin.com/company/ubs/">UBS ↗</a></div>
+    <div class="exp-sub">📍 Pune, India · 📅 Jul 2018 – Mar 2022</div>
+  </div>
+</div>
 
-> 📍 Pune, India · 📅 July 2018 – March 2022
-
-## Overview
-
-**Promoted from Graduate Engineer to ML Engineer within 2 years** for exceptional performance delivering production ML systems across Investment Banking and Wealth Management divisions at UBS.
+**Promoted within 2 years** for exceptional performance delivering production ML systems across Investment Banking and Wealth Management divisions at UBS.
 
 **Impact Highlights:**
 - Developed predictive models and real-time analytics pipelines processing 50M+ records daily
@@ -30,7 +32,7 @@ description: Production ML systems across Investment Banking and Wealth Manageme
 - **Cloud & DevOps:** Docker, Kubernetes, Jenkins (CI/CD), Git
 - **Visualization:** Tableau, PowerBI, Interactive Dashboards
 
-**Recognition:** Promoted Graduate Engineer → ML Engineer (within 24 months)
+**Recognition:** Promoted within 2 years
 
 ## Recommendations
 
