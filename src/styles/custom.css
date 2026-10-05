@@ -1,0 +1,299 @@
+/* Portfolio card grid with filtering */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin-top: 0;
+  transition: border-color 0.2s, transform 0.1s;
+}
+
+.project-card:hover {
+  border-color: var(--sl-color-text-accent);
+  transform: translateY(-2px);
+}
+
+.project-card h3 { margin-top: 0; }
+
+/* Dropdown multi-select filters */
+#proj-controls {
+  display: block;
+  margin: 1rem 0 2rem;
+}
+#proj-controls .dropdown-filters {
+  display: grid;
+  grid-template-columns: max-content repeat(2, minmax(9.5rem, 10rem));
+  align-items: start;
+  justify-content: start;
+  column-gap: 0.75rem;
+  row-gap: 0.75rem;
+}
+#proj-controls .dropdown-filters > .dropdown {
+  margin-top: 0;
+}
+#exp-controls .sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0;
+}
+.dropdown-filters {
+  gap: 0.75rem;
+  margin: 0;
+  align-items: center;
+}
+.dropdown-filters .filter-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  margin: 0;
+}
+.dropdown {
+  position: relative;
+  flex: none;
+  display: inline-flex;
+  align-items: stretch;
+  align-self: start;
+  width: 100%;
+  height: 2.25rem;
+}
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 8.5rem;
+  height: 2.25rem;
+  margin: 0;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.35rem;
+  background: var(--sl-color-bg-nav);
+  color: var(--sl-color-text);
+  cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  transition: border-color 0.15s;
+}
+.dropdown-toggle:hover {
+  border-color: var(--sl-color-text-accent);
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.25rem;
+  background: var(--sl-color-bg-nav);
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.35rem;
+  padding: 0.5rem;
+  z-index: 20;
+  min-width: 10rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.dropdown-menu.open { display: block; }
+.dropdown-menu label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.dropdown-menu label:hover {
+  background: var(--sl-color-gray-6);
+}
+
+@media (max-width: 30rem) {
+  #proj-controls .dropdown-filters {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  #exp-controls .sort-controls {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  #proj-controls .dropdown {
+    width: 100%;
+  }
+
+  #proj-controls .dropdown-toggle {
+    width: 100%;
+  }
+}
+
+/* Tag filter buttons (kept for backward compat) */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  align-items: center;
+}
+.filter-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--sl-color-gray-3);
+}
+
+.filter-btn {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 2rem;
+  background: transparent;
+  color: var(--sl-color-text);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--sl-color-text-accent);
+  color: var(--sl-color-bg);
+  border-color: var(--sl-color-text-accent);
+}
+
+/* Experience timeline */
+.experience-card {
+  border-left: 3px solid var(--sl-color-text-accent);
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  background: var(--sl-color-bg-nav);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.experience-card h3 { margin-top: 0; }
+.experience-card .duration { color: var(--sl-color-gray-3); font-size: 0.9rem; }
+
+/* Badge/tag styles */
+.tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  margin: 0.15rem;
+}
+.tag-domain { background: #1e3a5f; color: #93c5fd; }
+.tag-lang { background: #14532d; color: #86efac; }
+.tag-tech { background: #713f12; color: #fde68a; }
+
+/* Certification list */
+.cert-list a { text-decoration: none; }
+.cert-list a:hover { text-decoration: underline; }
+
+/* Hide card via filter */
+.project-card.hidden, .experience-card.hidden { display: none; }
+
+/* Sort bar */
+.sort-select {
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.35rem;
+  background: var(--sl-color-bg-nav);
+  color: var(--sl-color-text);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.apply-btn {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--sl-color-text-accent);
+  border-radius: 0.35rem;
+  background: var(--sl-color-text-accent);
+  color: var(--sl-color-bg);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.apply-btn:hover { opacity: 0.85; }
+
+/* Adjust layout widths */
+:root {
+  --sl-content-width: 55rem;
+}
+
+/* Desktop navigation can switch between the top bar and Starlight's sidebar. */
+@media (min-width: 50rem) {
+  html[data-nav-layout='top'] {
+    --sl-content-inline-start: 0rem;
+  }
+
+  html[data-nav-layout='top'] .sidebar {
+    display: none;
+  }
+}
+
+/* Keep the restored language marks compact and readable on narrow screens. */
+.language-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+@media (max-width: 30rem) {
+  .language-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.language-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 3rem;
+  font-weight: 600;
+}
+
+.language-icon img {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 2.75rem;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  box-sizing: border-box;
+}
+
+/* Hero actions: two rows — row 1 nav (Projects/Experience), row 2 contact (Email/LinkedIn/GitHub).
+   Flex-wrap with a full-width break element (::after) ordered between the two groups,
+   so each row left-aligns independently (grid shares column tracks and misaligns). */
+.hero .sl-flex.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nav links first (order 1), contact links last (order 3) */
+.hero .sl-flex.actions a.sl-link-button:not(.minimal) {
+  order: 1;
+}
+.hero .sl-flex.actions a.sl-link-button.minimal {
+  order: 3;
+}
+
+/* Zero-height full-width break (order 2) forces the contact group onto row 2 */
+.hero .sl-flex.actions::after {
+  content: "";
+  order: 2;
+  flex-basis: 100%;
+  height: 0;
+}

@@ -1,0 +1,186 @@
+---
+import { Icon } from '@astrojs/starlight/components';
+import LanguageSelect from 'virtual:starlight/components/LanguageSelect';
+import Search from 'virtual:starlight/components/Search';
+import SiteTitle from 'virtual:starlight/components/SiteTitle';
+import SocialIcons from 'virtual:starlight/components/SocialIcons';
+import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
+
+const pathname = Astro.url.pathname;
+
+const navigation = [
+  { label: 'About', href: '/' },
+  { label: 'Experience', href: '/experience/' },
+  { label: 'Projects', href: '/projects/' },
+  { label: 'Leadership', href: '/leadership/' },
+  { label: 'Research & Publications', href: '/publications/' },
+  { label: 'Skills', href: '/skills/' },
+];
+
+const isActive = (href: string) =>
+  href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`);
+---
+
+<div class="portfolio-header">
+  <div class="title-wrapper sl-flex">
+    <SiteTitle />
+  </div>
+
+  <div class="site-search">
+    <Search />
+  </div>
+
+  <nav class="top-navigation" aria-label="Primary navigation">
+    {
+      navigation.map((item) => (
+        <a class:list={{ 'top-nav-link': true, active: isActive(item.href) }} href={item.href}>
+          {item.label}
+        </a>
+      ))
+    }
+  </nav>
+
+  <div class="header-actions sl-flex print:hidden">
+    <div class="sl-flex social-icons">
+      <SocialIcons />
+    </div>
+    <button
+      class="layout-toggle"
+      type="button"
+      aria-label="Switch navigation to sidebar"
+      title="Switch navigation to sidebar"
+      data-layout-toggle
+    >
+      <Icon name="bars" />
+    </button>
+    <ThemeSelect />
+    <LanguageSelect />
+  </div>
+</div>
+
+<script>
+  const storageKey = 'portfolio-nav-layout';
+
+  function setNavigationLayout(layout: 'top' | 'sidebar') {
+    document.documentElement.dataset.navLayout = layout;
+    localStorage.setItem(storageKey, layout);
+
+    document.querySelectorAll<HTMLButtonElement>('[data-layout-toggle]').forEach((button) => {
+      const isTop = layout === 'top';
+      button.setAttribute('aria-label', isTop ? 'Switch navigation to sidebar' : 'Switch navigation to top bar');
+      button.setAttribute('title', isTop ? 'Switch navigation to sidebar' : 'Switch navigation to top bar');
+      button.setAttribute('aria-pressed', String(!isTop));
+    });
+  }
+
+  setNavigationLayout(localStorage.getItem(storageKey) === 'sidebar' ? 'sidebar' : 'top');
+
+  document.querySelectorAll<HTMLButtonElement>('[data-layout-toggle]').forEach((button) => {
+    button.addEventListener('click', () => {
+      setNavigationLayout(document.documentElement.dataset.navLayout === 'sidebar' ? 'top' : 'sidebar');
+    });
+  });
+</script>
+
+<style>
+  @layer starlight.core {
+    .portfolio-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      height: 100%;
+      min-width: 0;
+    }
+
+    .title-wrapper {
+      min-width: 0;
+    }
+
+    .site-search {
+      flex: 0 1 13rem;
+      min-width: 8rem;
+    }
+
+    .top-navigation {
+      display: none;
+      align-items: center;
+      gap: 0.25rem;
+      min-width: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .top-navigation::-webkit-scrollbar {
+      display: none;
+    }
+
+    .top-nav-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2rem;
+      padding: 0.35rem;
+      border-radius: 0.25rem;
+      color: var(--sl-color-gray-2);
+      font-size: var(--sl-text-sm);
+      font-weight: 500;
+      text-decoration: none;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .top-nav-link:hover,
+    .top-nav-link.active {
+      color: var(--sl-color-text-accent);
+      background: var(--sl-color-gray-6);
+    }
+
+    .header-actions,
+    .social-icons {
+      gap: 0.75rem;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .social-icons::after {
+      content: '';
+      height: 2rem;
+      border-inline-end: 1px solid var(--sl-color-gray-5);
+    }
+
+    .layout-toggle {
+      display: inline-grid;
+      place-items: center;
+      width: 2rem;
+      height: 2rem;
+      padding: 0;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+      background: transparent;
+      color: var(--sl-color-gray-2);
+      cursor: pointer;
+    }
+
+    .layout-toggle:hover,
+    .layout-toggle:focus-visible {
+      border-color: var(--sl-color-hairline-shade);
+      background: var(--sl-color-gray-6);
+      color: var(--sl-color-text-accent);
+    }
+
+    @media (min-width: 50rem) {
+      :global(html[data-nav-layout='top']) .top-navigation {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 49.999rem) {
+      .site-search {
+        display: none;
+      }
+
+      .layout-toggle {
+        display: none;
+      }
+    }
+  }
+</style>
