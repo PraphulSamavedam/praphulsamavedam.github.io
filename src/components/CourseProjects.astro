@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  course: string;
+  ordered?: boolean;
+}
+
+const { course, ordered = false } = Astro.props;
+const courseSlug = `projects/courses/${course}`;
+const projects = (await getCollection('docs'))
+  .filter((entry) => {
+    const slug = entry.data.slug ?? entry.id;
+    return slug.startsWith(`${courseSlug}/`) && entry.data.sidebar?.order !== 0;
+  })
+  .sort((a, b) => {
+    const orderA = a.data.sidebar?.order ?? Number.MAX_SAFE_INTEGER;
+    const orderB = b.data.sidebar?.order ?? Number.MAX_SAFE_INTEGER;
+    const slugA = a.data.slug ?? a.id;
+    const slugB = b.data.slug ?? b.id;
+    return orderA - orderB || slugA.localeCompare(slugB);
+  });
+---
+
+{ordered ? (
+  <ol>
+    {projects.map((project) => (
+      <li>
+        <a href={`/${project.data.slug ?? project.id}/`}>{project.data.title}</a>
+      </li>
+    ))}
+  </ol>
+) : (
+  <ul>
+    {projects.map((project) => (
+      <li>
+        <a href={`/${project.data.slug ?? project.id}/`}>{project.data.title}</a>
+      </li>
+    ))}
+  </ul>
+)}

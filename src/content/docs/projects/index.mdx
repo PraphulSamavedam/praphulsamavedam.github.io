@@ -1,0 +1,86 @@
+---
+title: Projects
+description: Technical projects in ML, Computer Vision, and NLP
+---
+<div id="proj-controls"><div class="dropdown-filters"><strong class="filter-label">Filters</strong><div class="dropdown"><button class="dropdown-toggle">Domain ▾</button><div class="dropdown-menu"><label><input type="checkbox" value="cv" /> Computer Vision</label><label><input type="checkbox" value="nlp" /> NLP</label><label><input type="checkbox" value="ml" /> Applied ML</label><label><input type="checkbox" value="multimodal" /> Multi-Modal</label><label><input type="checkbox" value="rl" /> Reinforcement Learning</label><label><input type="checkbox" value="remote-sensing" /> Remote Sensing</label><label><input type="checkbox" value="competition" /> Competition</label></div></div><div class="dropdown"><button class="dropdown-toggle">Tech ▾</button><div class="dropdown-menu"><label><input type="checkbox" value="pytorch" /> PyTorch</label><label><input type="checkbox" value="tensorflow" /> TensorFlow</label><label><input type="checkbox" value="python" /> Python</label><label><input type="checkbox" value="cpp" /> C++</label><label><input type="checkbox" value="transformers" /> Transformers</label><label><input type="checkbox" value="yolo" /> YOLO</label><label><input type="checkbox" value="opencv" /> OpenCV</label><label><input type="checkbox" value="xgboost" /> XGBoost</label></div></div></div></div>
+<div class="project-grid" id="proj-grid">
+<div class="project-card" data-tags="multimodal nlp cv pytorch python transformers yolo">
+<h3><a href="/projects/visual-llm/">Visual LLM for VQA</a></h3>
+<p>Multi-modal VQA pipelines combining BLIP, YOLO, Llama-2 &amp; Mistral without fine-tuning. Achieved 52% semantic match accuracy through prompt engineering.</p>
+<span class="tag tag-domain">Multi-Modal</span> <span class="tag tag-domain">NLP</span> <span class="tag tag-domain">CV</span> <span class="tag tag-lang">Python</span> <span class="tag tag-lang">PyTorch</span> <span class="tag tag-tech">Transformers</span> <span class="tag tag-tech">YOLO</span> <span class="tag tag-tech">Llama-2</span> <span class="tag tag-tech">Mistral</span>
+</div>
+<div class="project-card" data-tags="cv cpp opencv pytorch python">
+<h3><a href="/projects/courses/CS-5330/">CS-5330: Computer Vision (5 Projects)</a></h3>
+<p>Real-time filtering, content-based image retrieval (1000+ images), 2D object recognition (83%, 17 classes), camera calibration &amp; AR (&lt;0.5px error), and CNN character recognition (98%+ MNIST, transfer learning).</p>
+<span class="tag tag-domain">Computer Vision</span> <span class="tag tag-lang">C++</span> <span class="tag tag-lang">Python</span> <span class="tag tag-tech">OpenCV</span> <span class="tag tag-tech">PyTorch</span> <span class="tag tag-tech">OpenGL</span>
+</div>
+<div class="project-card" data-tags="rl ml python">
+<h3><a href="/projects/courses/CS-5100/">CS-5100: AI Foundations (4 Projects)</a></h3>
+<p>A* search, probabilistic ghost tracking (HMM + particle filtering), Q-Learning with function approximation, and adversarial minimax with alpha-beta pruning in Pacman.</p>
+<span class="tag tag-domain">Reinforcement Learning</span> <span class="tag tag-domain">Applied ML</span> <span class="tag tag-lang">Python</span> <span class="tag tag-tech">Q-Learning</span> <span class="tag tag-tech">Particle Filtering</span>
+</div>
+<div class="project-card" data-tags="cv pytorch python yolo">
+<h3><a href="/projects/table-tennis-tracking/">Live Table Tennis Tracking</a></h3>
+<p>Real-time CV system for autonomous game scoring. Hybrid classical + deep learning approach achieving 94.7% tracking accuracy at 30 FPS.</p>
+<span class="tag tag-domain">Computer Vision</span> <span class="tag tag-lang">Python</span> <span class="tag tag-lang">PyTorch</span> <span class="tag tag-tech">YOLO</span> <span class="tag tag-tech">UNet</span> <span class="tag tag-tech">OpenCV</span>
+</div>
+<div class="project-card" data-tags="nlp pytorch python transformers">
+<h3><a href="/projects/natural-language-inference/">Natural Language Inference</a></h3>
+<p>Systematic comparison from classical ML to BERT for NLI. Production optimization with quantization and distillation.</p>
+<span class="tag tag-domain">NLP</span> <span class="tag tag-lang">Python</span> <span class="tag tag-lang">PyTorch</span> <span class="tag tag-tech">BERT</span> <span class="tag tag-tech">Transformers</span> <span class="tag tag-tech">ONNX</span>
+</div>
+<div class="project-card" data-tags="ml competition python xgboost">
+<h3><a href="/projects/store-sales-forecasting/">Store Sales Forecasting</a></h3>
+<p><strong>Top 14/6,828 (0.2%)</strong> — XGBoost with engineered temporal features for retail forecasting.</p>
+<span class="tag tag-domain">Applied ML</span> <span class="tag tag-domain">Competition</span> <span class="tag tag-lang">Python</span> <span class="tag tag-tech">XGBoost</span> <span class="tag tag-tech">Scikit-learn</span>
+</div>
+<div class="project-card" data-tags="ml competition python xgboost">
+<h3><a href="/projects/image-downloads-prediction/">Image Downloads Prediction</a></h3>
+<p><strong>Top 5 — Kaggle</strong> — Predicted image download counts from metadata features without image processing. Tackled missing data, outliers, and featured/non-featured imbalance.</p>
+<span class="tag tag-domain">Applied ML</span> <span class="tag tag-domain">Competition</span> <span class="tag tag-lang">Python</span> <span class="tag tag-tech">XGBoost</span> <span class="tag tag-tech">Scikit-learn</span>
+</div>
+<div class="project-card" data-tags="cv remote-sensing ml python tensorflow opencv">
+<h3><a href="/projects/endangered-species-satellite/">Endangered Species Conservation via Satellite</a></h3>
+<p>CNN+LSTM analysis of satellite imagery to predict habitat degradation for endangered species using NDVI vegetation health trends.</p>
+<span class="tag tag-domain">Remote Sensing</span> <span class="tag tag-domain">CV</span> <span class="tag tag-domain">Applied ML</span> <span class="tag tag-lang">Python</span> <span class="tag tag-tech">TensorFlow</span> <span class="tag tag-tech">OpenCV</span> <span class="tag tag-tech">Google Earth Engine</span>
+</div>
+<div class="project-card" data-tags="ml">
+<h3><a href="/projects/stock-portfolio-simulation/">Stock Portfolio Simulation</a></h3>
+<p>MVC-architecture investment simulator with real market data via Alpha Vantage API. Supports dollar-cost averaging, portfolio persistence, and dual GUI/CLI interface.</p>
+<span class="tag tag-domain">Applied ML</span> <span class="tag tag-lang">Java</span> <span class="tag tag-tech">Swing</span> <span class="tag tag-tech">Alpha Vantage API</span> <span class="tag tag-tech">MVC</span>
+</div>
+</div>
+
+<script>{`
+document.addEventListener('DOMContentLoaded', function(){
+  var ctrls = document.getElementById('proj-controls');
+  if(!ctrls) return;
+  ctrls.querySelectorAll('.dropdown-toggle').forEach(function(btn){
+    btn.onclick = function(e){ e.stopPropagation(); var m=this.nextElementSibling; m.style.display=m.style.display==='block'?'none':'block'; };
+  });
+  ctrls.querySelectorAll('.dropdown-menu').forEach(function(m){
+    m.onclick = function(e){ e.stopPropagation(); };
+  });
+  ctrls.querySelectorAll('input[type=checkbox]').forEach(function(cb){
+    cb.onchange = function(){ window.applyProjFilters(); };
+  });
+  document.addEventListener('click', function(e){ if(!e.target.closest('.dropdown')) document.querySelectorAll('#proj-controls .dropdown-menu').forEach(function(m){m.style.display='none';}); });
+});
+window.applyProjFilters = function() {
+  var cards = document.querySelectorAll('#proj-grid .project-card');
+  var groups = document.querySelectorAll('#proj-controls .dropdown-menu');
+  cards.forEach(function(card){
+    var tags = card.getAttribute('data-tags').split(' ');
+    var show = true;
+    groups.forEach(function(group){
+      var checked = [];
+      group.querySelectorAll('input[type=checkbox]').forEach(function(c){ if(c.checked) checked.push(c.value); });
+      if(checked.length === 0) return;
+      var match = false;
+      for(var i=0;i<tags.length;i++){ if(checked.indexOf(tags[i])!==-1){match=true;break;} }
+      if(!match) show = false;
+    });
+    card.style.display = show ? '' : 'none';
+  });
+};
+`}</script>
