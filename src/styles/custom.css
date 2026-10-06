@@ -448,7 +448,21 @@
 
 /* Company logo tile — white rounded surface so wordmarks of any color stay legible in dark mode */
 .lt-logo { flex: 0 0 3.1rem; width: 3.1rem; height: 2.6rem; margin-top: 0.1rem; border-radius: 0.45rem; background: #fff; display: flex; align-items: center; justify-content: center; padding: 0.3rem; }
+/* Leadership logos are square-tiled (matches the former monogram footprint) */
+.leadership-timeline .lt-logo { flex-basis: 2.9rem; width: 2.9rem; height: 2.9rem; border-radius: 0.5rem; margin-top: 0; }
 .lt-logo img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+/* Theme-aware logo pair (opt-in): a .lt-logo holding both .lt-logo-light and
+   .lt-logo-dark imgs shows the one matching the active theme. Logos with a single
+   <img> are unaffected. Starlight sets data-theme="light|dark" on <html>; "auto"
+   follows the system via prefers-color-scheme. */
+.lt-logo img.lt-logo-dark { display: none; }
+.lt-logo img.lt-logo-light { display: block; }
+[data-theme='dark'] .lt-logo img.lt-logo-light { display: none; }
+[data-theme='dark'] .lt-logo img.lt-logo-dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  [data-theme='auto'] .lt-logo img.lt-logo-light { display: none; }
+  [data-theme='auto'] .lt-logo img.lt-logo-dark { display: block; }
+}
 
 /* Experience detail-page logo banner */
 .exp-logo-header { display: flex; align-items: center; gap: 0.9rem; margin: 0 0 1.25rem; padding: 0.75rem 1rem; background: var(--sl-color-bg-nav); border: 1px solid var(--sl-color-gray-5); border-left: 4px solid var(--sl-color-text-accent); border-radius: 0.6rem; }

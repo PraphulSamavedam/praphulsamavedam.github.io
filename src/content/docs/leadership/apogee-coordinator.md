@@ -15,4 +15,4 @@ Jointly organized 2 kernel events at BITS-Pilani's annual technical fest APOGEE 
 - **i-Strike:** Computer-vision-based autonomous robot navigation through a maze collecting treasures
 - **RAW (Robots At War):** Knock-out tournament robot competition for top 3 positions
 
-![i-Strike Event Poster](/images/leadershipExp/IMG_iStrike_Kernel_Event_Poster_2017.jpg)
+![i-Strike Event Poster](/images/leadershipExp/IMG_iStrike_Kernel_Event_Poster.jpg)

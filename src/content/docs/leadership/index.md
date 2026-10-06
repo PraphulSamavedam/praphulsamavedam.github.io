@@ -11,7 +11,7 @@ A journey through community leadership and technical event organization — most
   <div class="lt-date">Aug 2023<small>Jul 2024</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
   <div class="lt-card" data-href="/leadership/gdsc-president/">
-    <div class="lt-mono">GDSC</div>
+    <div class="lt-logo"><img src="/images/leadershipExp/gdsc-logo.svg" alt="GDSC logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/gdsc-president/">President — GDSC</a></div>
       <div class="lt-org">Google Developer Student Club</div>
@@ -23,7 +23,7 @@ A journey through community leadership and technical event organization — most
   <div class="lt-date">Aug 2023<small>Feb 2024</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
   <div class="lt-card" data-href="/leadership/kmsc-gsg-representative/">
-    <div class="lt-mono">KMSC</div>
+    <div class="lt-logo"><img src="/images/leadershipExp/kmsc-logo.jpg" alt="KMSC logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/kmsc-gsg-representative/">GSG Representative — KMSC</a></div>
       <div class="lt-org">Khoury Masters Student Council</div>
@@ -35,7 +35,7 @@ A journey through community leadership and technical event organization — most
   <div class="lt-date">Jan 2023<small>Jul 2023</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
   <div class="lt-card" data-href="/leadership/gsg-senator/">
-    <div class="lt-mono">GSG</div>
+    <div class="lt-logo"><img src="/images/leadershipExp/gsg-logo.png" alt="GSG logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/gsg-senator/">Senator — GSG</a></div>
       <div class="lt-org">Graduate Student Governance</div>
@@ -47,7 +47,7 @@ A journey through community leadership and technical event organization — most
   <div class="lt-date">Jan 2023<small>Apr 2023</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
   <div class="lt-card" data-href="/leadership/gdsc-brand-team/">
-    <div class="lt-mono">GDSC</div>
+    <div class="lt-logo"><img src="/images/leadershipExp/gdsc-logo.svg" alt="GDSC logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/gdsc-brand-team/">Brand Team Member — GDSC</a></div>
       <div class="lt-org">Google Developer Student Club</div>
@@ -59,7 +59,7 @@ A journey through community leadership and technical event organization — most
   <div class="lt-date">Jun 2016<small>May 2017</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
   <div class="lt-card" data-href="/leadership/nss-coordinator/">
-    <div class="lt-mono">NSS</div>
+    <div class="lt-logo"><img src="/images/leadershipExp/nss-bits-pilani-black-edition.jpg" alt="NSS logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/nss-coordinator/">School Coordinator — NSS</a></div>
       <div class="lt-org">National Service Scheme, BITS-Pilani · 74 volunteers</div>
@@ -71,7 +71,7 @@ A journey through community leadership and technical event organization — most
   <div class="lt-date">Jun 2016<small>May 2017</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
   <div class="lt-card" data-href="/leadership/apogee-coordinator/">
-    <div class="lt-mono">EEEA</div>
+    <div class="lt-logo"><img src="/images/leadershipExp/eee-assoc-bits-pilani-logo.jpg" alt="EEE Association logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/apogee-coordinator/">APOGEE Events Joint Coordinator</a></div>
       <div class="lt-org">EEE Association, BITS-Pilani</div>
@@ -83,7 +83,7 @@ A journey through community leadership and technical event organization — most
   <div class="lt-date">Jun 2016<small>May 2017</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
   <div class="lt-card" data-href="/leadership/ieee-publicity/">
-    <div class="lt-mono">IEEE</div>
+    <div class="lt-logo"><img src="/images/leadershipExp/ieee-bits-pilani-logo.png" alt="IEEE logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/ieee-publicity/">Publicity Coordinator — IEEE</a></div>
       <div class="lt-org">IEEE Student Chapter, BITS-Pilani</div>
@@ -95,7 +95,7 @@ A journey through community leadership and technical event organization — most
   <div class="lt-date">Jun 2015<small>May 2016</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
   <div class="lt-card" data-href="/leadership/nss-executive/">
-    <div class="lt-mono">NSS</div>
+    <div class="lt-logo"><img src="/images/leadershipExp/nss-bits-pilani-black-edition.jpg" alt="NSS logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/nss-executive/">School Executive Committee — NSS</a></div>
       <div class="lt-org">National Service Scheme, BITS-Pilani</div>
