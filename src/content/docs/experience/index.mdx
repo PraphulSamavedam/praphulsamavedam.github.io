@@ -28,7 +28,7 @@ large-scale AI systems — <a href="https://www.linkedin.com/in/smpraphul">let's
 <div class="lt-row" data-start="2025-01" data-months="15">
   <div class="lt-date">Jan 2025<small>Present</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/experience/amazon-agi/">
     <div class="lt-logo"><img src="/images/workExp/amazon-logo.png" alt="Amazon logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/experience/amazon-agi/">Software Development Engineer — Amazon</a></div>
@@ -54,7 +54,7 @@ large-scale AI systems — <a href="https://www.linkedin.com/in/smpraphul">let's
 <div class="lt-row" data-start="2023-07" data-months="6">
   <div class="lt-date">Jul 2023<small>Dec 2023</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/experience/sway-ai/">
     <div class="lt-logo"><img src="/images/workExp/sway-ai-logo.png" alt="Sway AI logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/experience/sway-ai/">ML Engineer Intern — Sway AI</a></div>
@@ -67,7 +67,7 @@ large-scale AI systems — <a href="https://www.linkedin.com/in/smpraphul">let's
 <div class="lt-row" data-start="2022-04" data-months="5">
   <div class="lt-date">Apr 2022<small>Aug 2022</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/experience/bny-mellon/">
     <div class="lt-logo"><img src="/images/workExp/bny-mellon-logo.png" alt="BNY Mellon logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/experience/bny-mellon/">ML Engineer — BNY Mellon</a></div>
@@ -80,7 +80,7 @@ large-scale AI systems — <a href="https://www.linkedin.com/in/smpraphul">let's
 <div class="lt-row" data-start="2018-07" data-months="44">
   <div class="lt-date">Jul 2018<small>Mar 2022</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/experience/ubs/">
     <div class="lt-logo"><img src="/images/workExp/ubs-logo.png" alt="UBS logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/experience/ubs/">ML Engineer — UBS</a></div>
@@ -93,7 +93,7 @@ large-scale AI systems — <a href="https://www.linkedin.com/in/smpraphul">let's
 <div class="lt-row" data-start="2017-07" data-months="6">
   <div class="lt-date">Jul 2017<small>Dec 2017</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/experience/nvidia/">
     <div class="lt-logo"><img src="/images/workExp/nvidia-logo.png" alt="Nvidia logo" /></div>
     <div class="lt-body">
       <div class="lt-title"><a href="/experience/nvidia/">ASIC Intern (Fall Co-op) — Nvidia</a></div>
@@ -142,18 +142,15 @@ large-scale AI systems — <a href="https://www.linkedin.com/in/smpraphul">let's
   });
   tl.addEventListener('mouseleave', () => { hovering = false; pickClosest(); });
 
-  // Whole-card navigation: clicking anywhere on a card with a detail link
-  // navigates to it. The inner title <a> keeps its native behavior (and
-  // keyboard focus), and a text selection does not trigger navigation.
+  // Whole-card navigation: a card with a data-href navigates to it on click.
+  // The inner title <a> keeps its native behavior (and keyboard focus).
   rows.forEach((r) => {
-    const link = r.querySelector('.lt-title a');
     const card = r.querySelector('.lt-card');
-    if (!link || !card) return;
+    if (!card || !card.dataset.href) return;
     card.classList.add('lt-clickable');
     card.addEventListener('click', (e) => {
       if (e.target.closest('a')) return;                       // let real links work
-      if (window.getSelection && String(window.getSelection())) return; // ignore text selection
-      window.location.href = link.getAttribute('href');
+      window.location.href = card.dataset.href;
     });
   });
 

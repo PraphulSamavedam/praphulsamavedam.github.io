@@ -10,7 +10,7 @@ A journey through community leadership and technical event organization — most
 <div class="lt-row">
   <div class="lt-date">Aug 2023<small>Jul 2024</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/leadership/gdsc-president/">
     <div class="lt-mono">GDSC</div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/gdsc-president/">President — GDSC</a></div>
@@ -22,7 +22,7 @@ A journey through community leadership and technical event organization — most
 <div class="lt-row">
   <div class="lt-date">Aug 2023<small>Feb 2024</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/leadership/kmsc-gsg-representative/">
     <div class="lt-mono">KMSC</div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/kmsc-gsg-representative/">GSG Representative — KMSC</a></div>
@@ -34,7 +34,7 @@ A journey through community leadership and technical event organization — most
 <div class="lt-row">
   <div class="lt-date">Jan 2023<small>Jul 2023</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/leadership/gsg-senator/">
     <div class="lt-mono">GSG</div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/gsg-senator/">Senator — GSG</a></div>
@@ -46,7 +46,7 @@ A journey through community leadership and technical event organization — most
 <div class="lt-row">
   <div class="lt-date">Jan 2023<small>Apr 2023</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/leadership/gdsc-brand-team/">
     <div class="lt-mono">GDSC</div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/gdsc-brand-team/">Brand Team Member — GDSC</a></div>
@@ -58,7 +58,7 @@ A journey through community leadership and technical event organization — most
 <div class="lt-row">
   <div class="lt-date">Jun 2016<small>May 2017</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/leadership/nss-coordinator/">
     <div class="lt-mono">NSS</div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/nss-coordinator/">School Coordinator — NSS</a></div>
@@ -70,7 +70,7 @@ A journey through community leadership and technical event organization — most
 <div class="lt-row">
   <div class="lt-date">Jun 2016<small>May 2017</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/leadership/apogee-coordinator/">
     <div class="lt-mono">EEEA</div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/apogee-coordinator/">APOGEE Events Joint Coordinator</a></div>
@@ -82,7 +82,7 @@ A journey through community leadership and technical event organization — most
 <div class="lt-row">
   <div class="lt-date">Jun 2016<small>May 2017</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/leadership/ieee-publicity/">
     <div class="lt-mono">IEEE</div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/ieee-publicity/">Publicity Coordinator — IEEE</a></div>
@@ -94,7 +94,7 @@ A journey through community leadership and technical event organization — most
 <div class="lt-row">
   <div class="lt-date">Jun 2015<small>May 2016</small></div>
   <div class="lt-spine"><span class="lt-dot"></span></div>
-  <div class="lt-card">
+  <div class="lt-card" data-href="/leadership/nss-executive/">
     <div class="lt-mono">NSS</div>
     <div class="lt-body">
       <div class="lt-title"><a href="/leadership/nss-executive/">School Executive Committee — NSS</a></div>
@@ -143,6 +143,18 @@ A journey through community leadership and technical event organization — most
       r.addEventListener('mouseenter', () => { hovering = true; setActive(r); });
     });
     tl.addEventListener('mouseleave', () => { hovering = false; pickClosest(); });
+
+    // Whole-card navigation: a card with a data-href navigates to it on click.
+    // The inner title <a> keeps its native behavior (and keyboard focus).
+    rows.forEach((r) => {
+      const card = r.querySelector('.lt-card');
+      if (!card || !card.dataset.href) return;
+      card.classList.add('lt-clickable');
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('a')) return;                       // let real links work
+        window.location.href = card.dataset.href;
+      });
+    });
 
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll, { passive: true });
