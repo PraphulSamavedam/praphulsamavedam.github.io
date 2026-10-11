@@ -3,13 +3,15 @@ title: Software Development Engineer at Amazon
 description: Production AI infrastructure for distributed ML and large-model workloads
 ---
 
-## [Amazon](https://www.linkedin.com/company/amazon/)
-
-> 📍 United States · 📅 January 2025 – Present
+<div class="exp-logo-header">
+  <div class="exp-logo"><img src="/images/workExp/amazon-logo.png" alt="Amazon logo" /></div>
+  <div>
+    <div class="exp-co"><a href="https://www.linkedin.com/company/amazon/">Amazon ↗</a></div>
+    <div class="exp-sub">📍 United States · 📅 Jan 2025 – Present</div>
+  </div>
+</div>
 
 Working on production infrastructure for distributed ML and large-model workloads, spanning teams across Amazon's AI organizations (AGI, Bedrock, and SageMaker).
-
-## Overview
 
 I build and operate production infrastructure for distributed ML and large-model workloads running on Kubernetes. My work spans workload orchestration, capacity planning, service reliability, observability, validation, and staged production rollout — most recently extending into Bedrock model-hosting infrastructure.
 

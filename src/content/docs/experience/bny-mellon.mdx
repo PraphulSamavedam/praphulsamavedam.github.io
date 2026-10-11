@@ -3,11 +3,13 @@ title: ML Engineer — BNY Mellon
 description: Automated control analytics and risk monitoring for global operations
 ---
 
-## [BNY Mellon](https://www.linkedin.com/company/bny-mellon/)
-
-> 📍 Pune, India · 📅 April 2022 – August 2022
-
-## Overview
+<div class="exp-logo-header">
+  <div class="exp-logo"><img src="/images/workExp/bny-mellon-logo.png" alt="BNY Mellon logo" /></div>
+  <div>
+    <div class="exp-co"><a href="https://www.linkedin.com/company/bny-mellon/">BNY Mellon ↗</a></div>
+    <div class="exp-sub">📍 Pune, India · 📅 Apr 2022 – Aug 2022</div>
+  </div>
+</div>
 
 Developed automated **control analytics and risk monitoring systems** for senior management across global regions (APAC, EMEA, Americas), enabling real-time oversight of operational controls and regulatory compliance.
 

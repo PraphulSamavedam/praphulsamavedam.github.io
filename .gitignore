@@ -8,4 +8,5 @@ dist/
 .bundle/
 .jekyll-metadata
 **/*.log
+**/*.DS_STORE
 archived
