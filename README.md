@@ -1,6 +1,9 @@
 # Professional Engineering Portfolio
+[![Deploy to GitHub Pages](https://github.com/PraphulSamavedam/praphulsamavedam.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/PraphulSamavedam/praphulsamavedam.github.io/actions/workflows/deploy.yml)
 
 This is the source code for my professional engineering portfolio website, hosted at [praphulsamavedam.github.io](https://praphulsamavedam.github.io).
+
+
 
 ## About
 
